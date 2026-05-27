@@ -1,16 +1,20 @@
-## Hi there 👋
+# Hallo 👋 ich bin LordLOLQDH
 
-<!--
-**LordLOLQDH/LordLOLQDH** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Willkommen auf meinem GitHub-Profil.
 
-Here are some ideas to get you started:
+## 💡 Über mich
+Ich bin ein Entwickler, der gerne an eigenen Projekten arbeitet und neue Technologien ausprobiert.  
+Mein Fokus liegt darauf, praktische Ideen umzusetzen und dabei kontinuierlich dazuzulernen.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🚀 Interessen
+- Softwareentwicklung
+- Webentwicklung & Tools
+- Experimentelle Projekte
+- Open Source Ideen
+
+## 🏢 Organisation
+Ich arbeite außerdem an Projekten in meiner Organisation:  
+👉 https://github.com/orgs/LordLOLQDH-s-Organisation/dashboard
+
+## 📫 Kontakt
+E-Mail: [auron-team@proton.me](mailto:auron-team@proton.me)
