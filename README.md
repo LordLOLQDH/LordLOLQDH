@@ -17,4 +17,4 @@ Ich arbeite außerdem an Projekten in meiner Organisation:
 👉 https://github.com/orgs/LordLOLQDH-s-Organisation/dashboard
 
 ## 📫 Kontakt
-E-Mail: [auron-team@proton.me](mailto:auron-team@proton.me)
+E-Mail: [LordLOLQDH@proton.me](mailto:LordLOLQDH@proton.me)
