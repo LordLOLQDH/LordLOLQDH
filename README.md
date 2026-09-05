@@ -2,8 +2,6 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:050505,55:0d0d0d,100:ff6a00&text=LordLOLQDH&fontColor=ffffff&fontSize=72&fontAlignY=38&desc=DEVELOPER%20%7C%20BUILDER%20%7C%20PROBLEM%20SOLVER&descAlignY=62&descSize=18" width="100%"/>
 
-<img src="https://komarev.com/ghpvc/?username=LordLOLQDH&color=ff6a00&style=for-the-badge&label=PROFILE%20VISITS" alt="Profile Visits"/>
-
 <br/>
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=21&duration=2800&pause=900&color=FF6A00&center=true&vCenter=true&width=780&lines=Developer+%7C+Builder+%7C+Problem+Solver;Websites+%7C+Software+%7C+Games+%7C+Systems;Idee+%E2%86%92+Build+%E2%86%92+Test+%E2%86%92+Improve;Building+something+new" alt="Typing SVG"/>
@@ -154,7 +152,7 @@ SECURITY              ██████████░░░░░░░░░�
 
 <h4>DU BIST BESUCHER NUMMER</h4>
 
-<img src="https://komarev.com/ghpvc/?username=LordLOLQDH&color=ff6a00&style=for-the-badge&label=PROFILE%20VISITS" alt="Du bist Besucher Nummer"/>
+<img src="./visitor-counter.svg" width="160" alt="Besucherzähler"/>
 
 <br/><br/>
 
