@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:050505,55:0d0d0d,100:ff6a00&text=LordLOLQDH&fontColor=ffffff&fontSize=72&fontAlignY=38&desc=KRAUS%20DIGITAL%20SOLUTIONS&descAlignY=62&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:050505,55:0d0d0d,100:ff6a00&text=LordLOLQDH&fontColor=ffffff&fontSize=72&fontAlignY=38&desc=DEVELOPER%20%7C%20BUILDER%20%7C%20PROBLEM%20SOLVER&descAlignY=62&descSize=18" width="100%"/>
 
 <img src="https://komarev.com/ghpvc/?username=LordLOLQDH&color=ff6a00&style=for-the-badge&label=PROFILE%20VISITS" alt="Profile Visits"/>
 
@@ -15,7 +15,7 @@
 
 <br/><br/>
 
-> **Kraus Digital Solutions** — digitale Ideen werden zu funktionierenden Projekten.
+> digitale Ideen werden zu funktionierenden Projekten.
 
 </div>
 
@@ -27,39 +27,18 @@
 ╔══════════════════════════════════════════════════════════════╗
 ║ USER         : LordLOLQDH                                   ║
 ║ NAME         : Adam Kraus                                   ║
-║ ORGANISATION : Kraus Digital Solutions                      ║
 ║ STATUS       : BUILDING                                     ║
 ║ FOCUS        : WEB • SOFTWARE • GAMES • AI • SYSTEMS        ║
 ║ PRINCIPLE    : LEARN BY BUILDING                            ║
 ╚══════════════════════════════════════════════════════════════╝
 ```
 
-Ich bin **Adam**, Entwickler und Gründer hinter **Kraus Digital Solutions**.
+Ich bin **Adam**, Entwickler und Builder.
 
 Auf diesem Profil entstehen Websites, Software, Spiele, Tools und System-Projekte. Ich nehme eine Idee, baue sie, teste sie, breche sie, repariere sie und entwickle sie weiter.
 
 ```text
 IDEA → BUILD → TEST → BREAK → FIX → IMPROVE → REPEAT
-```
-
----
-
-## `> KDS / KRAUS DIGITAL SOLUTIONS`
-
-<div align="center">
-
-**KRAUS DIGITAL SOLUTIONS**  
-`DIGITAL • MODERN • INDIVIDUELL`
-
-</div>
-
-```text
-┌──────────────────────────────────────────────────────────────┐
-│ WEB DESIGN        → moderne Websites                         │
-│ DEVELOPMENT       → Software & Tools                        │
-│ DIGITAL SOLUTIONS → individuelle Projekte                    │
-│ EXPERIMENTS       → neue Ideen & Technologien                │
-└──────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -200,7 +179,7 @@ SECURITY              ██████████░░░░░░░░░�
 ## `> SYSTEM / END`
 
 **Danke für deinen Besuch.**  
-`© LordLOLQDH / Kraus Digital Solutions`
+`© LordLOLQDH`
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=130&section=footer&color=0:ff6a00,45:111111,100:050505" width="100%"/>
 
