@@ -130,7 +130,9 @@ SECURITY              ██████████░░░░░░░░░�
 
 <div align="center">
 
-<img src="https://count.getloli.com/@LordLOLQDH?name=LordLOLQDH&theme=ai-1&padding=7&offset=0&align=top&scale=1&pixelated=1&darkmode=auto" alt="Besucherzähler"/>
+<h4>DU BIST BESUCHER NUMMER</h4>
+
+<img src="https://komarev.com/ghpvc/?username=LordLOLQDH&style=for-the-badge&color=ff6a00&label=PROFILAUFRUFE" alt="Profilaufrufe"/>
 
 <br/><br/>
 
