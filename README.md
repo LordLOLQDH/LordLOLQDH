@@ -1,15 +1,13 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:050505,50:080808,100:111111&text=DEVELOPER&fontColor=ffffff&fontSize=72&fontAlignY=45" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:050505,50:080808,100:111111&text=LordLOLQDH&fontColor=ffffff&fontSize=72&fontAlignY=45" width="100%"/>
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=21&duration=2800&pause=900&color=FF6A00&center=true&vCenter=true&width=780&lines=Developer+%7C+Builder+%7C+Problem+Solver;Websites+%7C+Software+%7C+Games+%7C+Systems;Idee+%E2%86%92+Build+%E2%86%92+Test+%E2%86%92+Improve;Building+something+new" alt="Typing SVG"/>
 
 <br/><br/>
 
-<img src="https://img.shields.io/badge/DARK%20DESIGN-050505?style=for-the-badge&labelColor=111111&color=ff6a00" alt="Dark Design"/>
-<img src="https://img.shields.io/badge/WEB-111111?style=for-the-badge&logo=googlechrome&logoColor=ff6a00" alt="Web"/>
-<img src="https://img.shields.io/badge/SOFTWARE-111111?style=for-the-badge&logo=code&logoColor=ff6a00" alt="Software"/>
-<img src="https://img.shields.io/badge/SYSTEMS-111111?style=for-the-badge&logo=linux&logoColor=ff6a00" alt="Systems"/>
+<img src="https://img.shields.io/github/followers/LordLOLQDH?style=for-the-badge&color=ff6a00&labelColor=111111&label=FOLLOWER" alt="Follower"/>
+<img src="https://img.shields.io/github/stars/LordLOLQDH?style=for-the-badge&color=ff6a00&labelColor=111111&label=STARS" alt="Stars"/>
 
 </div>
 
@@ -19,6 +17,7 @@
 
 ```text
 ╔══════════════════════════════════════════════════════════════╗
+║ USER         : LordLOLQDH                                   ║
 ║ STATUS       : BUILDING                                     ║
 ║ FOCUS        : WEB • SOFTWARE • GAMES • AI • SYSTEMS        ║
 ║ PRINCIPLE    : LEARN BY BUILDING                            ║
@@ -26,7 +25,9 @@
 ╚══════════════════════════════════════════════════════════════╝
 ```
 
-Ideen werden gebaut, getestet, verbessert und weiterentwickelt.
+Ich bin **LordLOLQDH**.
+
+Ich entwickle Websites, Software, Spiele, Tools und System-Projekte. Ideen werden gebaut, getestet, verbessert und weiterentwickelt.
 
 ```text
 IDEA → BUILD → TEST → BREAK → FIX → IMPROVE → REPEAT
@@ -60,8 +61,6 @@ Betriebssysteme, Browser und System-Experimente.
 
 </td></tr>
 </table>
-
-<div align="center"><img src="https://img.shields.io/badge/BUILDING-111111?style=for-the-badge&logoColor=ff6a00&labelColor=ff6a00" alt="Building"/></div>
 
 ---
 
@@ -135,8 +134,7 @@ SECURITY              ██████████░░░░░░░░░�
 
 <br/><br/>
 
-<img src="https://img.shields.io/github/followers/LordLOLQDH?style=for-the-badge&color=ff6a00&labelColor=111111&label=FOLLOWER" alt="Follower"/>
-<img src="https://img.shields.io/github/stars/LordLOLQDH?style=for-the-badge&color=ff6a00&labelColor=111111&label=STARS" alt="Stars"/>
+<img src="https://img.shields.io/github/followers/LordLOLQDH?style=for-the-badge&color=ff6a00&labelColor=111111&label=AKTUELLE%20FOLLOWER" alt="Aktuelle Follower"/>
 
 </div>
 
