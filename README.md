@@ -1,179 +1,203 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:050505,50:111111,100:ff6a00&text=LordLOLQDH&fontColor=ffffff&fontSize=70&fontAlignY=38&desc=Building%20things%20that%20shouldn't%20exist%20yet.&descAlignY=62&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:050505,55:0d0d0d,100:ff6a00&text=LordLOLQDH&fontColor=ffffff&fontSize=72&fontAlignY=38&desc=KRAUS%20DIGITAL%20SOLUTIONS&descAlignY=62&descSize=18" width="100%"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=2800&pause=900&color=FF6A00&center=true&vCenter=true&width=700&lines=Developer+%7C+Builder+%7C+Problem+Solver;Web+Apps+%7C+Games+%7C+Tools+%7C+Experiments;Turning+ideas+into+working+projects;Always+building+something+new" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=21&duration=2800&pause=900&color=FF6A00&center=true&vCenter=true&width=780&lines=Developer+%7C+Builder+%7C+Problem+Solver;Websites+%7C+Software+%7C+Games+%7C+Systems;Idee+%E2%86%92+Build+%E2%86%92+Test+%E2%86%92+Improve;Building+something+new" alt="Typing SVG"/>
 
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=LordLOLQDH&style=for-the-badge&color=ff6a00&label=PROFILE+VIEWS" alt="Profile views"/>
-<img src="https://img.shields.io/github/followers/LordLOLQDH?style=for-the-badge&color=ff6a00&label=FOLLOWERS" alt="Followers"/>
+<img src="https://komarev.com/ghpvc/?username=LordLOLQDH&style=for-the-badge&color=ff6a00&label=PROFILAUFRUFE" alt="Profilaufrufe"/>
+<img src="https://img.shields.io/github/followers/LordLOLQDH?style=for-the-badge&color=ff6a00&label=FOLLOWER" alt="Follower"/>
+<img src="https://img.shields.io/github/stars/LordLOLQDH?style=for-the-badge&color=ff6a00&label=STARS" alt="Stars"/>
+
+<br/><br/>
+
+> **Kraus Digital Solutions** — digitale Ideen werden zu funktionierenden Projekten.
 
 </div>
 
 ---
 
-## `> whoami`
+## `> SYSTEM / IDENTITÄT`
 
-I'm **Adam**, the developer behind **LordLOLQDH**.
+```text
+╔══════════════════════════════════════════════════════════════╗
+║ USER         : LordLOLQDH                                   ║
+║ NAME         : Adam Kraus                                   ║
+║ ORGANISATION : Kraus Digital Solutions                      ║
+║ STATUS       : BUILDING                                     ║
+║ FOCUS        : WEB • SOFTWARE • GAMES • AI • SYSTEMS        ║
+║ PRINCIPLE    : LEARN BY BUILDING                            ║
+╚══════════════════════════════════════════════════════════════╝
+```
 
-I like taking an idea, turning it into a project, breaking it, fixing it, and then making it better. My GitHub is basically my public workshop: websites, games, tools, experiments, operating-system ideas, AI projects and whatever I'm currently curious about.
+Ich bin **Adam**, Entwickler und Gründer hinter **Kraus Digital Solutions**.
+
+Auf diesem Profil entstehen Websites, Software, Spiele, Tools und System-Projekte. Ich nehme eine Idee, baue sie, teste sie, breche sie, repariere sie und entwickle sie weiter.
+
+```text
+IDEA → BUILD → TEST → BREAK → FIX → IMPROVE → REPEAT
+```
+
+---
+
+## `> KDS / KRAUS DIGITAL SOLUTIONS`
+
+<div align="center">
+
+**KRAUS DIGITAL SOLUTIONS**  
+`DIGITAL • MODERN • INDIVIDUELL`
+
+</div>
 
 ```text
 ┌──────────────────────────────────────────────────────────────┐
-│  USER      : LordLOLQDH                                      │
-│  STATUS    : Building                                       │
-│  FOCUS     : Web • Software • Games • AI • Systems          │
-│  WORKFLOW  : Idea → Build → Test → Break → Fix → Repeat     │
-│  PHILOSOPHY: Learn by building                              │
+│ WEB DESIGN        → moderne Websites                         │
+│ DEVELOPMENT       → Software & Tools                        │
+│ DIGITAL SOLUTIONS → individuelle Projekte                    │
+│ EXPERIMENTS       → neue Ideen & Technologien                │
 └──────────────────────────────────────────────────────────────┘
 ```
 
-## `> currently_building`
-
-- **Auron** — an ecosystem of experimental software projects, including OS, assistant and browser concepts.
-- **FreeChess.org** — a web chess project with gameplay and AI experimentation.
-- **Kraus Digital Solutions** — building modern websites, digital tools and client projects.
-- **Small experiments** — games, utilities, simulations and weird little web projects.
-
 ---
 
-## `> featured_projects`
+## `> PROJEKTE`
 
 <table>
-<tr>
-<td width="50%">
+<tr><td width="50%">
 
 ### [Auron OS](https://github.com/LordLOLQDH/Auron-OS)
-Experimental operating-system project exploring low-level concepts and a complete software ecosystem.
+Experimentelles Betriebssystem mit eigenen System-, Boot- und Software-Konzepten.
 
-</td>
-<td width="50%">
+</td><td width="50%">
 
 ### [Auron Vault](https://github.com/LordLOLQDH/Auron-Vault)
-Security-focused password-manager project built around strong authentication and recovery concepts.
+Security-orientierter Passwort-Manager mit Authentifizierungs- und Recovery-Konzepten.
 
-</td>
-</tr>
-<tr>
-<td width="50%">
+</td></tr>
+<tr><td width="50%">
 
 ### [FreeChess.org](https://github.com/LordLOLQDH/FreeChess.org)
-Browser-based chess project with interactive gameplay and Stockfish experimentation.
+Browser-Schachprojekt mit interaktivem Gameplay und Stockfish-Experimenten.
 
-</td>
-<td width="50%">
+</td><td width="50%">
 
 ### [Auron-Volt](https://github.com/LordLOLQDH/Auron-Volt)
-Part of the growing Auron project ecosystem.
+Teil des Auron-Projekt-Ökosystems für weitere Software-Experimente.
 
-</td>
-</tr>
-<tr>
-<td width="50%">
+</td></tr>
+<tr><td width="50%">
 
 ### [void-browser](https://github.com/LordLOLQDH/void-browser)
-Experimental browser project focused on creating a custom browsing experience.
+Experimenteller Browser für eine eigene Browsing-Erfahrung.
 
-</td>
-<td width="50%">
+</td><td width="50%">
 
 ### [Neon Runner](https://github.com/LordLOLQDH/Neon-Runner)
-Fast-paced browser game experiment with neon visuals and arcade-style gameplay.
+Arcade-inspiriertes Browser-Game mit Neon-Optik und eigener Physik.
 
-</td>
-</tr>
+</td></tr>
 </table>
 
-<p align="center">
-<a href="https://github.com/LordLOLQDH?tab=repositories"><img src="https://img.shields.io/badge/VIEW_ALL_PROJECTS-050505?style=for-the-badge&logo=github&logoColor=white&labelColor=ff6a00" alt="View all projects"/></a>
-</p>
+<div align="center"><a href="https://github.com/LordLOLQDH?tab=repositories"><img src="https://img.shields.io/badge/ALLE%20PROJEKTE-050505?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=ff6a00" alt="Alle Projekte"/></a></div>
 
 ---
 
-## `> tech_stack`
-
-<p align="center">
-<img src="https://skillicons.dev/icons?i=html,css,js,python,git,github,vscode&perline=7" alt="Tech stack" />
-</p>
-
-<p align="center">
-<img src="https://img.shields.io/badge/HTML-ff6a00?style=for-the-badge&logo=html5&logoColor=white" />
-<img src="https://img.shields.io/badge/CSS-ff6a00?style=for-the-badge&logo=css3&logoColor=white" />
-<img src="https://img.shields.io/badge/JavaScript-ff6a00?style=for-the-badge&logo=javascript&logoColor=white" />
-<img src="https://img.shields.io/badge/Python-ff6a00?style=for-the-badge&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/Git-ff6a00?style=for-the-badge&logo=git&logoColor=white" />
-</p>
-
-> I'm constantly learning, so this list is a snapshot rather than a finished list of everything I use.
-
----
-
-## `> github_stats`
+## `> TECH / STACK`
 
 <div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=LordLOLQDH&show_icons=true&hide_border=true&bg_color=050505&title_color=ff6a00&icon_color=ff6a00&text_color=ffffff" height="180" alt="GitHub stats"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=LordLOLQDH&layout=compact&hide_border=true&bg_color=050505&title_color=ff6a00&text_color=ffffff" height="180" alt="Top languages"/>
+<img src="https://skillicons.dev/icons?i=html,css,js,python,git,github,vscode,linux&perline=8" alt="Technologien"/>
+<br/><br/>
+<img src="https://img.shields.io/badge/HTML-ff6a00?style=for-the-badge&logo=html5&logoColor=white"/>
+<img src="https://img.shields.io/badge/CSS-ff6a00?style=for-the-badge&logo=css3&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-ff6a00?style=for-the-badge&logo=javascript&logoColor=white"/>
+<img src="https://img.shields.io/badge/Python-ff6a00?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Git-ff6a00?style=for-the-badge&logo=git&logoColor=white"/>
+<img src="https://img.shields.io/badge/Linux-ff6a00?style=for-the-badge&logo=linux&logoColor=white"/>
+</div>
+
+---
+
+## `> GITHUB / STATISTIK`
+
+<div align="center">
+<img src="https://github-readme-stats.vercel.app/api?username=LordLOLQDH&show_icons=true&hide_border=true&bg_color=050505&title_color=ff6a00&icon_color=ff6a00&text_color=ffffff&custom_title=LordLOLQDH%20%2F%20GitHub%20Stats" height="180" alt="GitHub Stats"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=LordLOLQDH&layout=compact&hide_border=true&bg_color=050505&title_color=ff6a00&text_color=ffffff&custom_title=Meistgenutzte%20Sprachen" height="180" alt="Top Languages"/>
 <br/>
-<img src="https://streak-stats.demolab.com?user=LordLOLQDH&theme=dark&hide_border=true&background=050505&ring=ff6a00&fire=ff6a00&currStreakLabel=ff6a00" alt="GitHub streak"/>
+<img src="https://streak-stats.demolab.com?user=LordLOLQDH&theme=dark&hide_border=true&background=050505&ring=ff6a00&fire=ff6a00&currStreakLabel=ff6a00&sideLabels=ffffff&dates=888888" alt="GitHub Streak"/>
 </div>
 
 ---
 
-## `> contribution_graph`
+## `> CONTRIBUTIONS / AKTIVITÄT`
 
-<div align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=LordLOLQDH&bg_color=050505&color=ffffff&line=ff6a00&point=ffffff&area=true&hide_border=true" width="95%" alt="Contribution graph"/>
-</div>
+<div align="center"><img src="https://github-readme-activity-graph.vercel.app/graph?username=LordLOLQDH&bg_color=050505&color=ffffff&line=ff6a00&point=ff6a00&area=true&hide_border=true&custom_title=LordLOLQDH%20-%20Contribution%20Graph" width="96%" alt="Contribution Graph"/></div>
 
 ---
 
-## `> what_i_like_to_build`
+## `> BUILD / WAS ICH BAUE`
 
 ```text
-WEB DEVELOPMENT       ████████████████████  Websites & web apps
-SOFTWARE TOOLS        ██████████████████░░  Useful / experimental tools
-GAMES                 ████████████████░░░░  Browser games & simulations
-AI                    ██████████████░░░░░░  AI experiments & assistants
-SYSTEMS               ████████████░░░░░░░░  OS / low-level experiments
-SECURITY              ██████████░░░░░░░░░░  Security-focused projects
+WEB DEVELOPMENT       ████████████████████  Websites & Web Apps
+SOFTWARE TOOLS        ██████████████████░░  Eigene Tools
+GAMES                 ████████████████░░░░  Browser Games
+AI                    ██████████████░░░░░░  AI & Assistants
+SYSTEMS               ████████████░░░░░░░░  OS & System Experimente
+SECURITY              ██████████░░░░░░░░░░  Security-Projekte
 ```
 
 ---
 
-## `> philosophy`
-
-**Build first. Learn along the way.**
-
-I don't want every project to be perfect on the first try. I want every project to teach me something new.
+## `> PHILOSOPHIE`
 
 ```diff
-+ curiosity
-+ experimentation
-+ learning
-+ building
-+ improving
-- waiting for the perfect idea
++ Neugier
++ Experimentieren
++ Lernen
++ Bauen
++ Testen
++ Verbessern
++ eigene Ideen umsetzen
+- auf die perfekte Idee warten
 ```
+
+**Nicht nur darüber reden. Bauen.**
 
 ---
 
-## `> connect`
+## `> BESUCHER / VISITOR`
 
 <div align="center">
-<a href="https://github.com/LordLOLQDH"><img src="https://img.shields.io/badge/GitHub-LordLOLQDH-050505?style=for-the-badge&logo=github&logoColor=white" /></a>
-<a href="mailto:LordLOLQDH@proton.me"><img src="https://img.shields.io/badge/Email-LordLOLQDH%40proton.me-050505?style=for-the-badge&logo=protonmail&logoColor=white" /></a>
-<a href="https://github.com/LordLOLQDH/LordLOLQDH-s-Organisation"><img src="https://img.shields.io/badge/Organisation-LordLOLQDH's%20Organisation-050505?style=for-the-badge&logo=github&logoColor=white" /></a>
+
+<h4>DU BIST BESUCHER NUMMER</h4>
+
+<img src="https://count.getloli.com/@LordLOLQDH?name=LordLOLQDH&theme=ai-1&padding=7&offset=0&align=top&scale=1&pixelated=1&darkmode=auto" alt="Besucherzähler"/>
+
+<br/><br/>
+
+<img src="https://img.shields.io/github/followers/LordLOLQDH?style=for-the-badge&color=ff6a00&label=AKTUELLE%20FOLLOWER" alt="Aktuelle Follower"/>
+
+</div>
+
+---
+
+## `> KONTAKT / CONNECT`
+
+<div align="center">
+<a href="https://github.com/LordLOLQDH"><img src="https://img.shields.io/badge/GitHub-LordLOLQDH-050505?style=for-the-badge&logo=github&logoColor=white&labelColor=ff6a00"/></a>
+<a href="mailto:LordLOLQDH@proton.me"><img src="https://img.shields.io/badge/Proton%20Mail-LordLOLQDH%40proton.me-050505?style=for-the-badge&logo=protonmail&logoColor=white&labelColor=ff6a00"/></a>
+<a href="https://github.com/LordLOLQDH/LordLOLQDH-s-Organisation"><img src="https://img.shields.io/badge/Organisation-LordLOLQDH's%20Organisation-050505?style=for-the-badge&logo=github&logoColor=white&labelColor=ff6a00"/></a>
 </div>
 
 ---
 
 <div align="center">
 
-### Thanks for visiting my profile.
+## `> SYSTEM / END`
 
-**If you find something interesting, check out the repositories.**
+**Danke für deinen Besuch.**  
+`© LordLOLQDH / Kraus Digital Solutions`
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:ff6a00,50:111111,100:050505" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=130&section=footer&color=0:ff6a00,45:111111,100:050505" width="100%"/>
 
 </div>
