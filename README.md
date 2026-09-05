@@ -121,17 +121,18 @@ Arcade-inspiriertes Browser-Game mit Neon-Optik und eigener Physik.
 ## `> GITHUB / STATISTIK`
 
 <div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=LordLOLQDH&show_icons=true&hide_border=true&bg_color=050505&title_color=ff6a00&icon_color=ff6a00&text_color=ffffff&custom_title=LordLOLQDH%20%2F%20GitHub%20Stats" height="180" alt="GitHub Stats"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=LordLOLQDH&layout=compact&hide_border=true&bg_color=050505&title_color=ff6a00&text_color=ffffff&custom_title=Meistgenutzte%20Sprachen" height="180" alt="Top Languages"/>
-<br/>
-<img src="https://streak-stats.demolab.com?user=LordLOLQDH&theme=dark&hide_border=true&background=050505&ring=ff6a00&fire=ff6a00&currStreakLabel=ff6a00&sideLabels=ffffff&dates=888888" alt="GitHub Streak"/>
+
+<img src="https://img.shields.io/github/commit-activity/y/LordLOLQDH/LordLOLQDH?style=for-the-badge&color=ff6a00&label=COMMITS%20%2F%20YEAR" alt="Commits pro Jahr"/>
+<img src="https://img.shields.io/github/last-commit/LordLOLQDH/LordLOLQDH?style=for-the-badge&color=ff6a00&label=LAST%20COMMIT" alt="Letzter Commit"/>
+<img src="https://img.shields.io/github/repo-size/LordLOLQDH/LordLOLQDH?style=for-the-badge&color=ff6a00&label=PROFILE%20REPO" alt="Repo Größe"/>
+
+<br/><br/>
+
+<img src="https://img.shields.io/github/followers/LordLOLQDH?style=for-the-badge&color=ff6a00&label=FOLLOWER" alt="Follower"/>
+<img src="https://img.shields.io/github/stars/LordLOLQDH?style=for-the-badge&color=ff6a00&label=STARS" alt="Stars"/>
+<img src="https://img.shields.io/github/watchers/LordLOLQDH/LordLOLQDH?style=for-the-badge&color=ff6a00&label=WATCHERS" alt="Watchers"/>
+
 </div>
-
----
-
-## `> CONTRIBUTIONS / AKTIVITÄT`
-
-<div align="center"><img src="https://github-readme-activity-graph.vercel.app/graph?username=LordLOLQDH&bg_color=050505&color=ffffff&line=ff6a00&point=ff6a00&area=true&hide_border=true&custom_title=LordLOLQDH%20-%20Contribution%20Graph" width="96%" alt="Contribution Graph"/></div>
 
 ---
 
@@ -169,7 +170,7 @@ SECURITY              ██████████░░░░░░░░░�
 
 <div align="center">
 
-<h4>DU BIST BESUCHER NUMMER</h4>
+<h4>PROFILAUFRUFE</h4>
 
 <img src="https://komarev.com/ghpvc/?username=LordLOLQDH&style=for-the-badge&color=ff6a00&label=PROFILAUFRUFE" alt="Profilaufrufe"/>
 
