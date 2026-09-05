@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:050505,55:0d0d0d,100:ff6a00&text=LordLOLQDH&fontColor=ffffff&fontSize=72&fontAlignY=38&desc=KRAUS%20DIGITAL%20SOLUTIONS&descAlignY=62&descSize=18" width="100%"/>
 
-<img src="https://view-counter-livid.vercel.app/api?username=LordLOLQDH&style=square&layout=horizontal&color=ff6a00&bg=050505&text=ffffff&label=PROFILE%20VISITS" alt="Profile Visits"/>
+<img src="https://komarev.com/ghpvc/?username=LordLOLQDH&color=ff6a00&style=for-the-badge&label=PROFILE%20VISITS" alt="Profile Visits"/>
 
 <br/>
 
@@ -175,7 +175,7 @@ SECURITY              ██████████░░░░░░░░░�
 
 <h4>DU BIST BESUCHER NUMMER</h4>
 
-<img src="https://view-counter-livid.vercel.app/api?username=LordLOLQDH&style=square&layout=horizontal&color=ff6a00&bg=050505&text=ffffff&label=PROFILE%20VISITS" alt="Du bist Besucher Nummer"/>
+<img src="https://komarev.com/ghpvc/?username=LordLOLQDH&color=ff6a00&style=for-the-badge&label=PROFILE%20VISITS" alt="Du bist Besucher Nummer"/>
 
 <br/><br/>
 
