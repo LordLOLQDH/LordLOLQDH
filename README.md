@@ -6,7 +6,7 @@
 
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=LordLOLQDH&style=for-the-badge&color=ff6a00&label=PROFILAUFRUFE" alt="Profilaufrufe"/>
+<img src="https://view-counter-livid.vercel.app/api?username=LordLOLQDH" alt="Besucherzähler"/>
 <img src="https://img.shields.io/github/followers/LordLOLQDH?style=for-the-badge&color=ff6a00&label=FOLLOWER" alt="Follower"/>
 <img src="https://img.shields.io/github/stars/LordLOLQDH?style=for-the-badge&color=ff6a00&label=STARS" alt="Stars"/>
 
@@ -170,9 +170,9 @@ SECURITY              ██████████░░░░░░░░░�
 
 <div align="center">
 
-<h4>PROFILAUFRUFE</h4>
+<h4>DU BIST BESUCHER NUMMER</h4>
 
-<img src="https://komarev.com/ghpvc/?username=LordLOLQDH&style=for-the-badge&color=ff6a00&label=PROFILAUFRUFE" alt="Profilaufrufe"/>
+<img src="https://view-counter-livid.vercel.app/api?username=LordLOLQDH" alt="Du bist Besucher Nummer"/>
 
 <br/><br/>
 
