@@ -1,0 +1,41 @@
+name: Update Visitor Counter
+
+on:
+  push:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-counter:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch profile view count
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fsSL "https://komarev.com/ghpvc/?username=LordLOLQDH&label=" -o /tmp/counter.svg
+          COUNT=$(grep -oE '>[0-9][0-9,]*<' /tmp/counter.svg | tail -n 1 | sed 's/[><]//g' | tr -d ',')
+          if ! [[ "$COUNT" =~ ^[0-9]+$ ]]; then
+            echo "Could not read visitor count"
+            exit 1
+          fi
+          sed "s/>0</>$COUNT</" visitor-counter.svg > /tmp/visitor-counter.svg
+          mv /tmp/visitor-counter.svg visitor-counter.svg
+
+      - name: Commit updated counter
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add visitor-counter.svg
+          git diff --cached --quiet && exit 0
+          git commit -m "Update visitor counter"
+          git push
