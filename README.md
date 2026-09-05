@@ -1,14 +1,14 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:050505,55:0d0d0d,100:ff6a00&text=LordLOLQDH&fontColor=ffffff&fontSize=72&fontAlignY=38&desc=KRAUS%20DIGITAL%20SOLUTIONS&descAlignY=62&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:050505,50:080808,100:111111&text=LordLOLQDH&fontColor=ffffff&fontSize=72&fontAlignY=38&desc=KRAUS%20DIGITAL%20SOLUTIONS&descAlignY=62&descSize=18" width="100%"/>
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=21&duration=2800&pause=900&color=FF6A00&center=true&vCenter=true&width=780&lines=Developer+%7C+Builder+%7C+Problem+Solver;Websites+%7C+Software+%7C+Games+%7C+Systems;Idee+%E2%86%92+Build+%E2%86%92+Test+%E2%86%92+Improve;Building+something+new" alt="Typing SVG"/>
 
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=LordLOLQDH&style=for-the-badge&color=ff6a00&label=PROFILAUFRUFE" alt="Profilaufrufe"/>
-<img src="https://img.shields.io/github/followers/LordLOLQDH?style=for-the-badge&color=ff6a00&label=FOLLOWER" alt="Follower"/>
-<img src="https://img.shields.io/github/stars/LordLOLQDH?style=for-the-badge&color=ff6a00&label=STARS" alt="Stars"/>
+<img src="https://komarev.com/ghpvc/?username=LordLOLQDH&style=for-the-badge&color=ff6a00&labelColor=111111&label=PROFILAUFRUFE" alt="Profilaufrufe"/>
+<img src="https://img.shields.io/github/followers/LordLOLQDH?style=for-the-badge&color=ff6a00&labelColor=111111&label=FOLLOWER" alt="Follower"/>
+<img src="https://img.shields.io/github/stars/LordLOLQDH?style=for-the-badge&color=ff6a00&labelColor=111111&label=STARS" alt="Stars"/>
 
 <br/><br/>
 
@@ -99,7 +99,7 @@ Arcade-inspiriertes Browser-Game mit Neon-Optik und eigener Physik.
 </td></tr>
 </table>
 
-<div align="center"><a href="https://github.com/LordLOLQDH?tab=repositories"><img src="https://img.shields.io/badge/ALLE%20PROJEKTE-050505?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=ff6a00" alt="Alle Projekte"/></a></div>
+<div align="center"><a href="https://github.com/LordLOLQDH?tab=repositories"><img src="https://img.shields.io/badge/ALLE%20PROJEKTE-111111?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=ff6a00" alt="Alle Projekte"/></a></div>
 
 ---
 
@@ -108,12 +108,12 @@ Arcade-inspiriertes Browser-Game mit Neon-Optik und eigener Physik.
 <div align="center">
 <img src="https://skillicons.dev/icons?i=html,css,js,python,git,github,vscode,linux&perline=8" alt="Technologien"/>
 <br/><br/>
-<img src="https://img.shields.io/badge/HTML-ff6a00?style=for-the-badge&logo=html5&logoColor=white"/>
-<img src="https://img.shields.io/badge/CSS-ff6a00?style=for-the-badge&logo=css3&logoColor=white"/>
-<img src="https://img.shields.io/badge/JavaScript-ff6a00?style=for-the-badge&logo=javascript&logoColor=white"/>
-<img src="https://img.shields.io/badge/Python-ff6a00?style=for-the-badge&logo=python&logoColor=white"/>
-<img src="https://img.shields.io/badge/Git-ff6a00?style=for-the-badge&logo=git&logoColor=white"/>
-<img src="https://img.shields.io/badge/Linux-ff6a00?style=for-the-badge&logo=linux&logoColor=white"/>
+<img src="https://img.shields.io/badge/HTML-111111?style=for-the-badge&logo=html5&logoColor=ff6a00"/>
+<img src="https://img.shields.io/badge/CSS-111111?style=for-the-badge&logo=css3&logoColor=ff6a00"/>
+<img src="https://img.shields.io/badge/JavaScript-111111?style=for-the-badge&logo=javascript&logoColor=ff6a00"/>
+<img src="https://img.shields.io/badge/Python-111111?style=for-the-badge&logo=python&logoColor=ff6a00"/>
+<img src="https://img.shields.io/badge/Git-111111?style=for-the-badge&logo=git&logoColor=ff6a00"/>
+<img src="https://img.shields.io/badge/Linux-111111?style=for-the-badge&logo=linux&logoColor=ff6a00"/>
 </div>
 
 ---
@@ -175,7 +175,7 @@ SECURITY              ██████████░░░░░░░░░�
 
 <br/><br/>
 
-<img src="https://img.shields.io/github/followers/LordLOLQDH?style=for-the-badge&color=ff6a00&label=AKTUELLE%20FOLLOWER" alt="Aktuelle Follower"/>
+<img src="https://img.shields.io/github/followers/LordLOLQDH?style=for-the-badge&color=ff6a00&labelColor=111111&label=AKTUELLE%20FOLLOWER" alt="Aktuelle Follower"/>
 
 </div>
 
@@ -184,9 +184,9 @@ SECURITY              ██████████░░░░░░░░░�
 ## `> KONTAKT / CONNECT`
 
 <div align="center">
-<a href="https://github.com/LordLOLQDH"><img src="https://img.shields.io/badge/GitHub-LordLOLQDH-050505?style=for-the-badge&logo=github&logoColor=white&labelColor=ff6a00"/></a>
-<a href="mailto:LordLOLQDH@proton.me"><img src="https://img.shields.io/badge/Proton%20Mail-LordLOLQDH%40proton.me-050505?style=for-the-badge&logo=protonmail&logoColor=white&labelColor=ff6a00"/></a>
-<a href="https://github.com/LordLOLQDH/LordLOLQDH-s-Organisation"><img src="https://img.shields.io/badge/Organisation-LordLOLQDH's%20Organisation-050505?style=for-the-badge&logo=github&logoColor=white&labelColor=ff6a00"/></a>
+<a href="https://github.com/LordLOLQDH"><img src="https://img.shields.io/badge/GitHub-LordLOLQDH-111111?style=for-the-badge&logo=github&logoColor=ff6a00&labelColor=050505"/></a>
+<a href="mailto:LordLOLQDH@proton.me"><img src="https://img.shields.io/badge/Proton%20Mail-LordLOLQDH%40proton.me-111111?style=for-the-badge&logo=protonmail&logoColor=ff6a00&labelColor=050505"/></a>
+<a href="https://github.com/LordLOLQDH/LordLOLQDH-s-Organisation"><img src="https://img.shields.io/badge/Organisation-LordLOLQDH's%20Organisation-111111?style=for-the-badge&logo=github&logoColor=ff6a00&labelColor=050505"/></a>
 </div>
 
 ---
@@ -198,6 +198,6 @@ SECURITY              ██████████░░░░░░░░░�
 **Danke für deinen Besuch.**  
 `© LordLOLQDH / Kraus Digital Solutions`
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=130&section=footer&color=0:ff6a00,45:111111,100:050505" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:111111,50:080808,100:050505" width="100%"/>
 
 </div>
