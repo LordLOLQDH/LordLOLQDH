@@ -36,7 +36,7 @@
 ```text
 ╔══════════════════════════════════════════════════════════════╗
 ║ USER         : LordLOLQDH                                   ║
-║ NAME         : Adam Kraus                                   ║
+║ NAME         : Adam                                         ║
 ║ STATUS       : BUILDING                                     ║
 ║ FOCUS        : WEB • SOFTWARE • GAMES • AI • SYSTEMS        ║
 ║ PRINCIPLE    : LEARN BY BUILDING                            ║
