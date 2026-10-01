@@ -25,7 +25,7 @@
 
 <h4>DU BIST BESUCHER NUMMER</h4>
 
-<img src="./visitor-counter.svg" width="160" alt="Besucherzähler"/>
+<img src="https://visitor-badge.laobi.icu/badge?page_id=LordLOLQDH.LordLOLQDH&left_color=050505&right_color=ff6a00&left_text=VISITORS" width="180" alt="Live Besucherzähler"/>
 
 </div>
 
