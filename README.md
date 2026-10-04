@@ -62,16 +62,49 @@ MINDSET    LEARN BY BUILDING
 
 <div align="center">
 
-### YOU ARE VISITOR
+### VISITOR MILESTONE
 
-<img src="https://visitor-badge.laobi.icu/badge?page_id=LordLOLQDH.LordLOLQDH&left_color=050505&right_color=ff6a00&left_text=VISITORS" width="190" alt="Live Besucherzähler"/>
+<img src="./visitor-counter.svg" width="720" alt="Animierter Besucher-Zielkreis"/>
 
-<br/>
-
-<sub>Live counter • automatically served by the badge service</sub>
+<sub>Der Kreis schließt sich mit jedem Besucher. Nach 100 geht es mit 150, 200, 250 usw. weiter.</sub>
 
 </div>
 
+---
+
+## 02 / ABOUT
+
+<table>
+<tr>
+<td width="60%" valign="top">
+
+### Adam
+
+Ich bin Entwickler und Builder. Auf diesem Profil entstehen Websites, Software, Spiele, Tools und System-Projekte.
+
+Mein Ansatz ist einfach:
+
+**Idee → bauen → testen → Fehler finden → reparieren → verbessern**
+
+Ich lerne vor allem durch das tatsächliche Bauen von Projekten und probiere dabei unterschiedliche Technologien und Konzepte aus.
+
+</td>
+<td width="40%" valign="top">
+
+### PROFILE
+
+~~~text
+USER       LordLOLQDH
+NAME       Adam
+STATUS     BUILDING
+FOCUS      WEB • SOFTWARE
+           GAMES • AI • SYSTEMS
+MINDSET    LEARN BY BUILDING
+~~~
+
+</td>
+</tr>
+</table>
 ---
 
 ## 03 / PROJECTS
