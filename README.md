@@ -30,6 +30,20 @@
 
 ---
 
+## 01 / ACTIVE CONSOLE
+
+<div align="center">
+
+<a href="https://lordlolqdh.github.io/LordLOLQDH/console.html"><img src="https://img.shields.io/badge/OPEN%20LINUX%20MINT%20CONSOLE-ff6a00?style=for-the-badge&logo=linuxmint&logoColor=white&labelColor=050505" alt="Linux Mint Konsole öffnen"/></a>
+
+<br/><br/>
+
+<sub>Interaktive Konsole im Stil von <b>adam@linuxmint</b> · Linux-Mint-Befehle · Visitor-Admin</sub>
+
+</div>
+
+---
+
 ## 01 / LIVE VISITOR
 
 <div align="center">
