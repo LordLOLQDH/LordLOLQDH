@@ -3,99 +3,30 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Adam @ Linux Mint — Visitor Console</title>
+<title>adam@linuxmint — Linux Terminal</title>
 <style>
-:root{--bg:#050505;--panel:#0b0b0b;--line:#222;--orange:#ff6a00;--text:#f5f5f5;--muted:#777;--green:#65d68a}
-*{box-sizing:border-box}body{margin:0;background:#020202;color:var(--text);font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;min-height:100vh;display:grid;place-items:center;padding:18px}
-.window{width:min(980px,100%);background:var(--panel);border:1px solid #2a2a2a;border-radius:14px;box-shadow:0 20px 70px #000;overflow:hidden}
-.bar{height:42px;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 14px;gap:8px}.dot{width:11px;height:11px;border-radius:50%;background:#333}.title{margin:auto;color:#aaa;font-size:13px}.title b{color:#fff}
-.screen{padding:20px;min-height:520px}.out{white-space:pre-wrap;line-height:1.55;font-size:14px;min-height:440px;overflow:auto}.line{margin:0 0 5px}.prompt{color:var(--orange)}.ok{color:var(--green)}.muted{color:var(--muted)}.err{color:#ff7b7b}
-.form{display:flex;gap:8px;border-top:1px solid var(--line);padding-top:14px}.promptInput{color:var(--orange);padding-top:8px}.input{flex:1;background:transparent;border:0;outline:0;color:#fff;font:inherit;font-size:14px}
-a{color:var(--orange);text-decoration:none}a:hover{text-decoration:underline}
+html,body{margin:0;height:100%;background:#050505;color:#eee;font-family:system-ui,-apple-system,sans-serif}
+body{display:flex;flex-direction:column}
+.top{height:58px;display:flex;align-items:center;padding:0 18px;gap:14px;background:#090909;border-bottom:1px solid #242424;box-sizing:border-box}
+.brand{font-family:ui-monospace,monospace;font-weight:700}.orange{color:#ff6a00}.status{margin-left:auto;color:#777;font-size:12px}
+.frame{flex:1;min-height:0;padding:14px;box-sizing:border-box}
+.shell{width:100%;height:100%;border:1px solid #252525;border-radius:12px;overflow:hidden;background:#000;box-shadow:0 20px 60px #000}
+iframe{width:100%;height:100%;border:0;background:#000}
+.bottom{min-height:48px;padding:10px 16px;box-sizing:border-box;background:#090909;border-top:1px solid #242424;color:#777;font:12px ui-monospace,monospace}
+button{background:#ff6a00;color:#050505;border:0;border-radius:7px;padding:7px 11px;font-weight:800;cursor:pointer}
 </style>
 </head>
 <body>
-<div class="window">
-  <div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><div class="title"><b>adam@linuxmint</b>: ~</div></div>
-  <div class="screen">
-    <div id="out" class="out"></div>
-    <form id="form" class="form" autocomplete="off">
-      <span id="prompt" class="promptInput">adam@linuxmint:~$</span>
-      <input id="input" class="input" autofocus spellcheck="false" aria-label="Linux Mint Konsole">
-    </form>
-  </div>
+<div class="top">
+  <div class="brand"><span class="orange">adam@linuxmint</span>:~$</div>
+  <div class="status">REAL LINUX VM · BROWSER-SIDE · NO LOGIN</div>
 </div>
-<script>
-const API="https://eopvkwhcgznvubesaszv.supabase.co/functions/v1/profile-visitor-admin";
-const out=document.getElementById("out"), input=document.getElementById("input"), prompt=document.getElementById("prompt");
-let admin=false, waitingForNumber=false;
-
-function print(text, cls=""){const d=document.createElement("div");d.className="line "+cls;d.textContent=text;out.appendChild(d);out.scrollTop=out.scrollHeight}
-function resetPrompt(){prompt.textContent=admin?"visitor-admin@linuxmint:~#":"adam@linuxmint:~$"}
-function boot(){
- print("Linux Mint Visitor Console");
- print("Kernel: browser-simulated Linux Mint terminal");
- print("User: adam");
- print("");
- print("Tippe 'help' für Befehle.");
- print("");
-}
-function help(){
- print("Verfügbare Befehle:");
- print("  help                  Hilfe anzeigen");
- print("  clear                 Konsole leeren");
- print("  whoami                Benutzer anzeigen");
- print("  pwd                   Arbeitsverzeichnis");
- print("  ls                    Dateien anzeigen");
- print("  date                  Datum/Uhrzeit");
- print("  neofetch              Systemübersicht");
- print("  visitor               aktuellen Counter anzeigen");
- print("  Visitor-Adm1n!        Visitor-Admin aktivieren");
- print("");
-}
-async function visitor(){
- try{
-   const r=await fetch("https://eopvkwhcgznvubesaszv.supabase.co/functions/v1/profile-visitor-counter",{cache:"no-store"});
-   if(!r.ok) throw new Error();
-   print("Der Counter wird beim normalen Bildaufruf aktualisiert.");
-   print("Hinweis: Diese Abfrage würde einen normalen Besucheraufruf zählen.","muted");
- }catch{print("Counter momentan nicht erreichbar.","err")}
-}
-async function setCounter(password,count){
- const r=await fetch(API,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({password,count})});
- const data=await r.json().catch(()=>({}));
- if(!r.ok) throw new Error(data.error||"Update fehlgeschlagen");
- return data.visitor_count;
-}
-form.addEventListener("submit",async e=>{
- e.preventDefault();
- const cmd=input.value.trim(); input.value="";
- if(!cmd)return;
- print((admin?"visitor-admin@linuxmint:~# ":"adam@linuxmint:~$ ")+cmd);
- if(waitingForNumber){
-   if(!/^\d+$/.test(cmd)){print("Bitte eine ganze Zahl eingeben.","err");return}
-   const n=Number(cmd);
-   if(!Number.isSafeInteger(n)||n<0){print("Ungültige Zahl.","err");return}
-   waitingForNumber=false;
-   try{const value=await setCounter("Visitor-Adm1n!",n);print("Counter gesetzt auf "+value+".","ok");print("Ring/Anzeige wird beim nächsten Bildaufruf mit dem neuen Wert gerendert.","muted")}
-   catch(err){print(err.message,"err")}
-   return;
- }
- if(cmd==="Visitor-Adm1n!"){admin=true;waitingForNumber=true;resetPrompt();print("Visitor-Admin aktiviert.","ok");print("Gib jetzt die gewünschte Besucherzahl ein:");return}
- const lower=cmd.toLowerCase();
- if(lower==="help"){help();return}
- if(lower==="clear"){out.innerHTML="";return}
- if(lower==="whoami"){print(admin?"adam (visitor-admin)":"adam");return}
- if(lower==="pwd"){print("/home/adam");return}
- if(lower==="ls"){print("README.md  projects/  visitor-counter/  .config/");return}
- if(lower==="date"){print(new Date().toString());return}
- if(lower==="neofetch"){print("adam@linuxmint");print("----------------");print("OS: Linux Mint (console simulation)");print("Shell: bash-like web terminal");print("User: adam");print("Theme: KDS orange / black");return}
- if(lower==="visitor"){await visitor();return}
- if(lower.startsWith("echo ")){print(cmd.slice(5));return}
- if(lower==="exit"){if(admin){admin=false;waitingForNumber=false;resetPrompt();print("Visitor-Admin deaktiviert.","ok")}else print("logout");return}
- print("bash: "+cmd+": command not found");
-});
-boot();resetPrompt();
-</script>
+<div class="frame"><div class="shell">
+  <iframe src="https://alizafar780.github.io/WebLinux/" title="Real Linux in browser" allow="fullscreen"></iframe>
+</div></div>
+<div class="bottom">
+  <button onclick="location.reload()">RESTART TERMINAL</button>
+  &nbsp; Die VM läuft vollständig im Browser. WebLinux bootet ein echtes Linux-System über den v86-Emulator; die bisher simulierten Befehle wurden entfernt.
+</div>
 </body>
 </html>
