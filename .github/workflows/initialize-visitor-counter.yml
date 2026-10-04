@@ -1,0 +1,23 @@
+name: Initialize visitor counter
+on:
+  push:
+    paths:
+      - ".github/workflows/initialize-visitor-counter.yml"
+permissions:
+  contents: write
+jobs:
+  init:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set counter to 26
+        run: |
+          curl -fsS "https://countapi.mileshilliard.com/api/v1/set/LordLOLQDH_profile_readme_views?value=26"
+      - name: Remove initializer
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          rm -f .github/workflows/initialize-visitor-counter.yml
+          git add -A
+          git commit -m "Remove one-time visitor counter initializer"
+          git push
