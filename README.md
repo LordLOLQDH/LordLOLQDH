@@ -1,116 +1,138 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:050505,55:0d0d0d,100:ff6a00&text=Adam&fontColor=ffffff&fontSize=72&fontAlignY=38&desc=DEVELOPER%20%7C%20BUILDER%20%7C%20PROBLEM%20SOLVER&descAlignY=62&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=230&color=0:050505,55:101010,100:ff6a00&text=ADAM&fontColor=ffffff&fontSize=72&fontAlignY=38&desc=DEVELOPER%20%E2%80%A2%20BUILDER%20%E2%80%A2%20PROBLEM%20SOLVER&descAlignY=62&descSize=17" width="100%"/>
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=21&duration=2800&pause=900&color=FF6A00&center=true&vCenter=true&width=780&lines=Developer+%7C+Builder+%7C+Problem+Solver;Websites+%7C+Software+%7C+Games+%7C+Systems;Idee+%E2%86%92+Build+%E2%86%92+Test+%E2%86%92+Improve;Building+something+new" alt="Typing SVG"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=2800&pause=900&color=FF6A00&center=true&vCenter=true&width=760&lines=Developer+%7C+Builder+%7C+Problem+Solver;Websites+%7C+Software+%7C+Games+%7C+Systems;IDEA+%E2%86%92+BUILD+%E2%86%92+TEST+%E2%86%92+IMPROVE;Always+building+something+new" alt="Typing SVG"/>
 
-<br/>
+<br/><br/>
 
-<img src="https://img.shields.io/github/followers/LordLOLQDH?style=for-the-badge&color=ff6a00&label=FOLLOWER" alt="Follower"/>
+<a href="https://github.com/LordLOLQDH"><img src="https://img.shields.io/badge/GitHub-LordLOLQDH-050505?style=for-the-badge&logo=github&logoColor=white&labelColor=ff6a00" alt="GitHub"/></a>
+<img src="https://img.shields.io/github/followers/LordLOLQDH?style=for-the-badge&color=ff6a00&label=FOLLOWERS" alt="Followers"/>
 <img src="https://img.shields.io/github/stars/LordLOLQDH?style=for-the-badge&color=ff6a00&label=STARS" alt="Stars"/>
 
 <br/><br/>
 
-> digitale Ideen werden zu funktionierenden Projekten.
+### BUILD • BREAK • FIX • REPEAT
+
+> Digitale Ideen werden zu funktionierenden Projekten.
 
 </div>
 
 ---
 
-## `> BESUCHER / VISITOR`
+## 01 / ABOUT
+
+<table>
+<tr>
+<td width="60%" valign="top">
+
+### Adam
+
+Ich bin Entwickler und Builder. Auf diesem Profil entstehen Websites, Software, Spiele, Tools und System-Projekte.
+
+Mein Ansatz ist einfach:
+
+**Idee → bauen → testen → Fehler finden → reparieren → verbessern**
+
+Ich lerne vor allem durch das tatsächliche Bauen von Projekten und probiere dabei unterschiedliche Technologien und Konzepte aus.
+
+</td>
+<td width="40%" valign="top">
+
+### PROFILE
+
+~~~text
+USER       LordLOLQDH
+NAME       Adam
+STATUS     BUILDING
+FOCUS      WEB • SOFTWARE
+           GAMES • AI • SYSTEMS
+MINDSET    LEARN BY BUILDING
+~~~
+
+</td>
+</tr>
+</table>
+
+---
+
+## 02 / LIVE VISITOR
 
 <div align="center">
 
-<h4>DU BIST BESUCHER NUMMER</h4>
+### YOU ARE VISITOR
 
-<img src="https://visitor-badge.laobi.icu/badge?page_id=LordLOLQDH.LordLOLQDH&left_color=050505&right_color=ff6a00&left_text=VISITORS" width="180" alt="Live Besucherzähler"/>
+<img src="https://visitor-badge.laobi.icu/badge?page_id=LordLOLQDH.LordLOLQDH&left_color=050505&right_color=ff6a00&left_text=VISITORS" width="190" alt="Live Besucherzähler"/>
+
+<br/>
+
+<sub>Live counter • automatically served by the badge service</sub>
 
 </div>
 
 ---
 
-## `> SYSTEM / IDENTITÄT`
-
-```text
-╔══════════════════════════════════════════════════════════════╗
-║ USER         : LordLOLQDH                                   ║
-║ NAME         : Adam                                         ║
-║ STATUS       : BUILDING                                     ║
-║ FOCUS        : WEB • SOFTWARE • GAMES • AI • SYSTEMS        ║
-║ PRINCIPLE    : LEARN BY BUILDING                            ║
-╚══════════════════════════════════════════════════════════════╝
-```
-
-Ich bin **Adam**, Entwickler und Builder.
-
-Auf diesem Profil entstehen Websites, Software, Spiele, Tools und System-Projekte. Ich nehme eine Idee, baue sie, teste sie, breche sie, repariere sie und entwickle sie weiter.
-
-```text
-IDEA → BUILD → TEST → BREAK → FIX → IMPROVE → REPEAT
-```
-
----
-
-## `> PROJEKTE`
+## 03 / PROJECTS
 
 <table>
-<tr><td width="50%">
+<tr>
+<td width="50%" valign="top">
 
 ### [Auron OS](https://github.com/LordLOLQDH/Auron-OS)
 Experimentelles Betriebssystem mit eigenen System-, Boot- und Software-Konzepten.
 
-</td><td width="50%">
-
 ### [Auron Vault](https://github.com/LordLOLQDH/Auron-Vault)
 Security-orientierter Passwort-Manager mit Authentifizierungs- und Recovery-Konzepten.
-
-</td></tr>
-<tr><td width="50%">
 
 ### [FreeChess.org](https://github.com/LordLOLQDH/FreeChess.org)
 Browser-Schachprojekt mit interaktivem Gameplay und Stockfish-Experimenten.
 
-</td><td width="50%">
+</td>
+<td width="50%" valign="top">
 
 ### [Auron-Volt](https://github.com/LordLOLQDH/Auron-Volt)
 Teil des Auron-Projekt-Ökosystems für weitere Software-Experimente.
 
-</td></tr>
-<tr><td width="50%">
-
 ### [void-browser](https://github.com/LordLOLQDH/void-browser)
 Experimenteller Browser für eine eigene Browsing-Erfahrung.
-
-</td><td width="50%">
 
 ### [Neon Runner](https://github.com/LordLOLQDH/Neon-Runner)
 Arcade-inspiriertes Browser-Game mit Neon-Optik und eigener Physik.
 
-</td></tr>
+</td>
+</tr>
 </table>
 
-<div align="center"><a href="https://github.com/LordLOLQDH?tab=repositories"><img src="https://img.shields.io/badge/ALLE%20PROJEKTE-050505?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=ff6a00" alt="Alle Projekte"/></a></div>
+<div align="center">
+
+<a href="https://github.com/LordLOLQDH?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE%20ALL%20PROJECTS-050505?style=for-the-badge&logo=github&logoColor=white&labelColor=ff6a00" alt="Alle Projekte"/></a>
+
+</div>
 
 ---
 
-## `> TECH / STACK`
+## 04 / TECH STACK
 
 <div align="center">
+
 <img src="https://skillicons.dev/icons?i=html,css,js,python,git,github,vscode,linux&perline=8" alt="Technologien"/>
+
 <br/><br/>
+
 <img src="https://img.shields.io/badge/HTML-ff6a00?style=for-the-badge&logo=html5&logoColor=white"/>
 <img src="https://img.shields.io/badge/CSS-ff6a00?style=for-the-badge&logo=css3&logoColor=white"/>
 <img src="https://img.shields.io/badge/JavaScript-ff6a00?style=for-the-badge&logo=javascript&logoColor=white"/>
 <img src="https://img.shields.io/badge/Python-ff6a00?style=for-the-badge&logo=python&logoColor=white"/>
 <img src="https://img.shields.io/badge/Git-ff6a00?style=for-the-badge&logo=git&logoColor=white"/>
 <img src="https://img.shields.io/badge/Linux-ff6a00?style=for-the-badge&logo=linux&logoColor=white"/>
+
 </div>
 
 ---
 
-## `> GITHUB / STATISTIK`
+## 05 / GITHUB ACTIVITY
 
 <div align="center">
 
@@ -120,7 +142,7 @@ Arcade-inspiriertes Browser-Game mit Neon-Optik und eigener Physik.
 
 <br/><br/>
 
-<img src="https://img.shields.io/github/followers/LordLOLQDH?style=for-the-badge&color=ff6a00&label=FOLLOWER" alt="Follower"/>
+<img src="https://img.shields.io/github/followers/LordLOLQDH?style=for-the-badge&color=ff6a00&label=FOLLOWERS" alt="Followers"/>
 <img src="https://img.shields.io/github/stars/LordLOLQDH?style=for-the-badge&color=ff6a00&label=STARS" alt="Stars"/>
 <img src="https://img.shields.io/github/watchers/LordLOLQDH/LordLOLQDH?style=for-the-badge&color=ff6a00&label=WATCHERS" alt="Watchers"/>
 
@@ -128,53 +150,95 @@ Arcade-inspiriertes Browser-Game mit Neon-Optik und eigener Physik.
 
 ---
 
-## `> BUILD / WAS ICH BAUE`
+## 06 / WHAT I BUILD
 
-```text
-WEB DEVELOPMENT       ████████████████████  Websites & Web Apps
-SOFTWARE TOOLS        ██████████████████░░  Eigene Tools
-GAMES                 ████████████████░░░░  Browser Games
-AI                    ██████████████░░░░░░  AI & Assistants
-SYSTEMS               ████████████░░░░░░░░  OS & System Experimente
-SECURITY              ██████████░░░░░░░░░░  Security-Projekte
-```
+<table>
+<tr>
+<td align="center" width="33%">
+
+### WEB
+Websites & Web Apps
+
+</td>
+<td align="center" width="33%">
+
+### SOFTWARE
+Tools & Applications
+
+</td>
+<td align="center" width="33%">
+
+### SYSTEMS
+OS & System Experiments
+
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+
+### GAMES
+Browser Games
+
+</td>
+<td align="center" width="33%">
+
+### AI
+AI & Assistants
+
+</td>
+<td align="center" width="33%">
+
+### SECURITY
+Security Projects
+
+</td>
+</tr>
+</table>
 
 ---
 
-## `> PHILOSOPHIE`
+## 07 / PHILOSOPHY
 
-```diff
-+ Neugier
-+ Experimentieren
-+ Lernen
-+ Bauen
-+ Testen
-+ Verbessern
-+ eigene Ideen umsetzen
-- auf die perfekte Idee warten
-```
+<div align="center">
+
+~~~text
+┌────────────────────────────────────────────────────────────┐
+│                                                            │
+│   CURIOSITY        →        EXPERIMENT                     │
+│        ↓                         ↓                         │
+│      LEARN         →          BUILD                        │
+│        ↓                         ↓                         │
+│       TEST         →        IMPROVE                        │
+│                                                            │
+└────────────────────────────────────────────────────────────┘
+~~~
 
 **Nicht nur darüber reden. Bauen.**
 
+</div>
+
 ---
 
-## `> KONTAKT / CONNECT`
+## 08 / CONNECT
 
 <div align="center">
-<a href="https://github.com/LordLOLQDH"><img src="https://img.shields.io/badge/GitHub-LordLOLQDH-050505?style=for-the-badge&logo=github&logoColor=white&labelColor=ff6a00"/></a>
-<a href="mailto:LordLOLQDH@proton.me"><img src="https://img.shields.io/badge/Proton%20Mail-LordLOLQDH%40proton.me-050505?style=for-the-badge&logo=protonmail&logoColor=white&labelColor=ff6a00"/></a>
-<a href="https://github.com/LordLOLQDH/LordLOLQDH-s-Organisation"><img src="https://img.shields.io/badge/Organisation-LordLOLQDH's%20Organisation-050505?style=for-the-badge&logo=github&logoColor=white&labelColor=ff6a00"/></a>
+
+<a href="https://github.com/LordLOLQDH"><img src="https://img.shields.io/badge/GITHUB-LordLOLQDH-050505?style=for-the-badge&logo=github&logoColor=white&labelColor=ff6a00"/></a>
+<a href="mailto:LordLOLQDH@proton.me"><img src="https://img.shields.io/badge/PROTON%20MAIL-LordLOLQDH%40proton.me-050505?style=for-the-badge&logo=protonmail&logoColor=white&labelColor=ff6a00"/></a>
+<a href="https://github.com/LordLOLQDH/LordLOLQDH-s-Organisation"><img src="https://img.shields.io/badge/ORGANISATION-LordLOLQDH's%20Organisation-050505?style=for-the-badge&logo=github&logoColor=white&labelColor=ff6a00"/></a>
+
+<br/><br/>
+
+<sub>Open source • Experiment • Build • Improve</sub>
+
 </div>
 
 ---
 
 <div align="center">
 
-## `> SYSTEM / END`
+<img src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:ff6a00,45:111111,100:050505" width="100%"/>
 
-**Danke für deinen Besuch.**  
-`© LordLOLQDH`
-
-<img src="https://capsule-render.vercel.app/api?type=waving&height=130&section=footer&color=0:ff6a00,45:111111,100:050505" width="100%"/>
+**© LordLOLQDH • Built by Adam**
 
 </div>
