@@ -58,57 +58,24 @@ MINDSET    LEARN BY BUILDING
 
 ---
 
-## 01 / LIVE VISITOR
-
 <div align="center">
 
-### VISITOR MILESTONE
-
-<img src="https://countapi.mileshilliard.com/api/v1/hit/LordLOLQDH_profile_readme_views/shield?text=VISITORS&bgcolor=ff6a00&textcolor=ffffff&style=for-the-badge" alt="Live Besucherzähler"/>
-
-<br/><br/>
-
-**26 → 100 → 150 → 200 → 250 → …**
-
-<sub>Jeder Aufruf zählt – auch mehrere Aufrufe vom selben Gerät.</sub>
+<a href="https://github.com/LordLOLQDH/LordLOLQDH/blob/main/visitor-counter.svg"><img src="./visitor-counter.svg" alt="Kreisförmiger Besucherzähler" width="760"/></a>
 
 </div>
 
 ---
 
-## 02 / ABOUT
+## 01 / LIVE VISITOR
 
-<table>
-<tr>
-<td width="60%" valign="top">
+<div align="center">
 
-### Adam
+**26 → 100 → 150 → 200 → 250 → …**
 
-Ich bin Entwickler und Builder. Auf diesem Profil entstehen Websites, Software, Spiele, Tools und System-Projekte.
+<sub>Der Kreis zeigt den Fortschritt zum nächsten Besucher-Meilenstein.</sub>
 
-Mein Ansatz ist einfach:
+</div>
 
-**Idee → bauen → testen → Fehler finden → reparieren → verbessern**
-
-Ich lerne vor allem durch das tatsächliche Bauen von Projekten und probiere dabei unterschiedliche Technologien und Konzepte aus.
-
-</td>
-<td width="40%" valign="top">
-
-### PROFILE
-
-~~~text
-USER       LordLOLQDH
-NAME       Adam
-STATUS     BUILDING
-FOCUS      WEB • SOFTWARE
-           GAMES • AI • SYSTEMS
-MINDSET    LEARN BY BUILDING
-~~~
-
-</td>
-</tr>
-</table>
 ---
 
 ## 03 / PROJECTS
