@@ -22,6 +22,26 @@
 
 ---
 
+<div align="center">
+
+<a href="https://github.com/LordLOLQDH/LordLOLQDH/blob/main/visitor-counter.svg"><img src="./visitor-counter.svg" alt="Kreisförmiger Besucherzähler" width="760"/></a>
+
+</div>
+
+---
+
+## 01 / LIVE VISITOR
+
+<div align="center">
+
+**26 → 100 → 150 → 200 → 250 → …**
+
+<sub>Der Kreis steht für den nächsten Meilenstein; die Besucherzahl wird live über den Counter-Dienst geladen.</sub>
+
+</div>
+
+---
+
 ## 02 / ABOUT
 
 <table>
@@ -55,32 +75,6 @@ MINDSET    LEARN BY BUILDING
 </td>
 </tr>
 </table>
-
----
-
-<div align="center">
-
-<a href="https://github.com/LordLOLQDH/LordLOLQDH/blob/main/visitor-counter.svg"><img src="./visitor-counter.svg" alt="Kreisförmiger Besucherzähler" width="760"/></a>
-
-<br/>
-
-<img src="https://visitor-badge.laobi.icu/badge?page_id=LordLOLQDH.profile&left_text=VISITORS&left_color=050505&right_color=ff6a00" alt="Live Besucherzahl"/>
-
-</div>
-
----
-
-## 01 / LIVE VISITOR
-
-<div align="center">
-
-**26 → 100 → 150 → 200 → 250 → …**
-
-<sub>Der Kreis steht für den nächsten Meilenstein; die Besucherzahl wird live über den Counter-Dienst geladen.</sub>
-
-</div>
-
----
 
 ---
 
