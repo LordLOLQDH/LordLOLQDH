@@ -38,7 +38,7 @@
 
 <br/><br/>
 
-<sub>Echte browserseitige Linux-VM · Terminal · Visitor-Admin</sub>
+<sub>Leichtgewichtiger Linux-Terminal · startet nur auf Wunsch</sub>
 
 </div>
 
