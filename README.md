@@ -84,18 +84,6 @@ MINDSET    LEARN BY BUILDING
 
 ---
 
-## 01 / LIVE VISITOR
-
-<div align="center">
-
-**26 → 100 → 150 → 200 → 250 → …**
-
-<sub>Der Kreis zeigt den Fortschritt zum nächsten Besucher-Meilenstein.</sub>
-
-</div>
-
----
-
 ## 03 / PROJECTS
 
 <table>
