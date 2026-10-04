@@ -5,28 +5,34 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>adam@linuxmint — Linux Terminal</title>
 <style>
-html,body{margin:0;height:100%;background:#050505;color:#eee;font-family:system-ui,-apple-system,sans-serif}
-body{display:flex;flex-direction:column}
-.top{height:58px;display:flex;align-items:center;padding:0 18px;gap:14px;background:#090909;border-bottom:1px solid #242424;box-sizing:border-box}
-.brand{font-family:ui-monospace,monospace;font-weight:700}.orange{color:#ff6a00}.status{margin-left:auto;color:#777;font-size:12px}
-.frame{flex:1;min-height:0;padding:14px;box-sizing:border-box}
-.shell{width:100%;height:100%;border:1px solid #252525;border-radius:12px;overflow:hidden;background:#000;box-shadow:0 20px 60px #000}
-iframe{width:100%;height:100%;border:0;background:#000}
-.bottom{min-height:48px;padding:10px 16px;box-sizing:border-box;background:#090909;border-top:1px solid #242424;color:#777;font:12px ui-monospace,monospace}
-button{background:#ff6a00;color:#050505;border:0;border-radius:7px;padding:7px 11px;font-weight:800;cursor:pointer}
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;background:#050505;color:#eee;font-family:system-ui,-apple-system,sans-serif}
+body{display:flex;flex-direction:column;overflow:hidden}
+.top{height:56px;flex:0 0 56px;display:flex;align-items:center;padding:0 16px;gap:12px;background:#090909;border-bottom:1px solid #242424}
+.brand{font:700 14px ui-monospace,SFMono-Regular,Menlo,monospace}
+.orange{color:#ff6a00}
+.status{margin-left:auto;color:#777;font:11px ui-monospace,SFMono-Regular,Menlo,monospace}
+.frame{flex:1;min-height:0;padding:12px}
+.shell{width:100%;height:100%;border:1px solid #252525;border-radius:10px;overflow:hidden;background:#000;box-shadow:0 18px 55px #000}
+iframe{display:block;width:100%;height:100%;border:0;background:#000}
+.bottom{height:46px;flex:0 0 46px;display:flex;align-items:center;padding:0 14px;background:#090909;border-top:1px solid #242424;color:#777;font:11px ui-monospace,SFMono-Regular,Menlo,monospace}
+.bottom a{color:#ff6a00;text-decoration:none}
+@media(max-width:650px){.status{display:none}.frame{padding:7px}.bottom{font-size:10px}}
 </style>
 </head>
 <body>
 <div class="top">
   <div class="brand"><span class="orange">adam@linuxmint</span>:~$</div>
-  <div class="status">REAL LINUX VM · BROWSER-SIDE · NO LOGIN</div>
+  <div class="status">REAL LINUX VM · DEBIAN · BROWSER-SIDE</div>
 </div>
-<div class="frame"><div class="shell">
-  <iframe src="https://alizafar780.github.io/WebLinux/" title="Real Linux in browser" allow="fullscreen"></iframe>
-</div></div>
+<div class="frame">
+  <div class="shell">
+    <iframe src="https://webvm.io/" title="WebVM — Linux in the browser" allow="fullscreen"></iframe>
+  </div>
+</div>
 <div class="bottom">
-  <button onclick="location.reload()">RESTART TERMINAL</button>
-  &nbsp; Die VM läuft vollständig im Browser. WebLinux bootet ein echtes Linux-System über den v86-Emulator; die bisher simulierten Befehle wurden entfernt.
+  <span>Browserseitige Linux-VM · keine Anmeldung für die VM erforderlich · </span>
+  <a href="https://webvm.io/" target="_blank" rel="noopener">WebVM öffnen</a>
 </div>
 </body>
 </html>
