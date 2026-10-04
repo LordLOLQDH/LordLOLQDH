@@ -22,7 +22,7 @@
 
 ---
 
-## 01 / ABOUT
+## 02 / ABOUT
 
 <table>
 <tr>
@@ -58,7 +58,7 @@ MINDSET    LEARN BY BUILDING
 
 ---
 
-## 02 / LIVE VISITOR
+## 01 / LIVE VISITOR
 
 <div align="center">
 
