@@ -2,37 +2,60 @@
 <html lang="de">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>adam@linuxmint — Linux Terminal</title>
 <style>
 *{box-sizing:border-box}
 html,body{margin:0;width:100%;height:100%;background:#050505;color:#eee;font-family:system-ui,-apple-system,sans-serif}
 body{display:flex;flex-direction:column;overflow:hidden}
-.top{height:56px;flex:0 0 56px;display:flex;align-items:center;padding:0 16px;gap:12px;background:#090909;border-bottom:1px solid #242424}
+.top{height:54px;flex:0 0 54px;display:flex;align-items:center;padding:0 14px;background:#090909;border-bottom:1px solid #242424}
 .brand{font:700 14px ui-monospace,SFMono-Regular,Menlo,monospace}
 .orange{color:#ff6a00}
-.status{margin-left:auto;color:#777;font:11px ui-monospace,SFMono-Regular,Menlo,monospace}
-.frame{flex:1;min-height:0;padding:12px}
-.shell{width:100%;height:100%;border:1px solid #252525;border-radius:10px;overflow:hidden;background:#000;box-shadow:0 18px 55px #000}
+.status{margin-left:auto;color:#777;font:10px ui-monospace,SFMono-Regular,Menlo,monospace}
+.frame{flex:1;min-height:0;padding:10px}
+.shell{width:100%;height:100%;border:1px solid #252525;border-radius:9px;overflow:hidden;background:#000}
 iframe{display:block;width:100%;height:100%;border:0;background:#000}
-.bottom{height:46px;flex:0 0 46px;display:flex;align-items:center;padding:0 14px;background:#090909;border-top:1px solid #242424;color:#777;font:11px ui-monospace,SFMono-Regular,Menlo,monospace}
+.launch{height:100%;display:flex;align-items:center;justify-content:center;padding:24px;text-align:center}
+.card{width:min(520px,100%);border:1px solid #242424;border-radius:12px;padding:28px 20px;background:#090909}
+.card h1{margin:0 0 10px;font:700 20px ui-monospace,SFMono-Regular,Menlo,monospace}
+.card p{margin:8px 0;color:#888;font-size:13px;line-height:1.5}
+button{margin-top:18px;border:0;border-radius:8px;padding:11px 18px;background:#ff6a00;color:#050505;font-weight:800;font-size:14px}
+.note{font-size:11px!important;color:#666!important}
+.bottom{height:42px;flex:0 0 42px;display:flex;align-items:center;padding:0 14px;background:#090909;border-top:1px solid #242424;color:#666;font:10px ui-monospace,SFMono-Regular,Menlo,monospace}
 .bottom a{color:#ff6a00;text-decoration:none}
-@media(max-width:650px){.status{display:none}.frame{padding:7px}.bottom{font-size:10px}}
+@media(max-width:650px){.status{display:none}.frame{padding:6px}.card{padding:24px 16px}}
 </style>
 </head>
 <body>
 <div class="top">
   <div class="brand"><span class="orange">adam@linuxmint</span>:~$</div>
-  <div class="status">REAL LINUX VM · DEBIAN · BROWSER-SIDE</div>
+  <div class="status">LINUX VM · MANUAL START</div>
 </div>
-<div class="frame">
-  <div class="shell">
-    <iframe src="https://webvm.io/" title="WebVM — Linux in the browser" allow="fullscreen"></iframe>
+<div class="frame"><div class="shell">
+  <div class="launch" id="launch">
+    <div class="card">
+      <h1>Linux Terminal</h1>
+      <p>Die Linux-VM wird erst gestartet, wenn du sie ausdrücklich öffnest.</p>
+      <p>Dadurch bleibt diese Seite auf dem iPhone leichtgewichtig.</p>
+      <button id="start">Linux starten</button>
+      <p class="note">Der Start lädt WebVM erst jetzt in den Browser.</p>
+    </div>
   </div>
-</div>
+</div></div>
 <div class="bottom">
-  <span>Browserseitige Linux-VM · keine Anmeldung für die VM erforderlich · </span>
-  <a href="https://webvm.io/" target="_blank" rel="noopener">WebVM öffnen</a>
+  <span>VM wird nicht automatisch geladen · </span>
+  <a href="https://webvm.io/" target="_blank" rel="noopener">WebVM separat öffnen</a>
 </div>
+<script>
+document.getElementById('start').addEventListener('click',function(){
+  const launch=document.getElementById('launch');
+  launch.innerHTML='';
+  const iframe=document.createElement('iframe');
+  iframe.src='https://webvm.io/';
+  iframe.title='WebVM — Linux in the browser';
+  iframe.allow='fullscreen';
+  launch.replaceWith(iframe);
+});
+</script>
 </body>
 </html>
