@@ -24,7 +24,7 @@
 
 <div align="center">
 
-<img src="https://eopvkwhcgznvubesaszv.supabase.co/functions/v1/profile-visitor-counter?apikey=sb_publishable_d3hVgDqwTuB63BtfumPwoQ_ngy2ig_c" alt="Kreisförmiger Live-Besucherzähler" width="760"/>
+<img src="https://eopvkwhcgznvubesaszv.supabase.co/functions/v1/profile-visitor-counter" alt="Kreisförmiger Live-Besucherzähler" width="760"/>
 
 </div>
 
