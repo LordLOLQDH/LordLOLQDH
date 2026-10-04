@@ -64,9 +64,13 @@ MINDSET    LEARN BY BUILDING
 
 ### VISITOR MILESTONE
 
-<img src="./visitor-counter.svg" width="720" alt="Animierter Besucher-Zielkreis"/>
+<img src="https://countapi.mileshilliard.com/api/v1/hit/LordLOLQDH_profile_readme_views/shield?text=VISITORS&bgcolor=ff6a00&textcolor=ffffff&style=for-the-badge" alt="Live Besucherzähler"/>
 
-<sub>Der Kreis schließt sich mit jedem Besucher. Nach 100 geht es mit 150, 200, 250 usw. weiter.</sub>
+<br/><br/>
+
+**26 → 100 → 150 → 200 → 250 → …**
+
+<sub>Jeder Aufruf zählt – auch mehrere Aufrufe vom selben Gerät.</sub>
 
 </div>
 
