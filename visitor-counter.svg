@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="430" viewBox="0 0 760 430">
+<defs>
+<linearGradient id="orange" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#ff9a55"/><stop offset="100%" stop-color="#ff5a00"/></linearGradient>
+<filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="760" height="430" rx="32" fill="#050505"/>
+<text x="380" y="42" text-anchor="middle" fill="#ff6a00" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" letter-spacing="4">LIVE PROFILE COUNTER</text>
+<circle cx="380" cy="205" r="137" fill="none" stroke="#222" stroke-width="18"/>
+<circle cx="380" cy="205" r="137" fill="none" stroke="url(#orange)" stroke-width="18" stroke-linecap="round" stroke-dasharray="861.95" stroke-dashoffset="638.64" transform="rotate(-90 380 205)" filter="url(#glow)">
+<animate attributeName="stroke-dashoffset" from="861.95" to="638.64" dur="1.5s" fill="freeze"/>
+</circle>
+<circle cx="380" cy="205" r="112" fill="#0b0b0b" stroke="#171717" stroke-width="2"/>
+<text x="380" y="190" text-anchor="middle" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="64" font-weight="800">26</text>
+<text x="380" y="225" text-anchor="middle" fill="#ff6a00" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" letter-spacing="4">VISITORS</text>
+<text x="380" y="389" text-anchor="middle" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700" letter-spacing="2">NEXT GOAL · 100</text>
+<text x="380" y="414" text-anchor="middle" fill="#777" font-family="Arial,Helvetica,sans-serif" font-size="12">26 / 100</text>
+</svg>
