@@ -38,7 +38,7 @@
 
 <br/><br/>
 
-<sub>Interaktive Konsole im Stil von <b>adam@linuxmint</b> · Linux-Mint-Befehle · Visitor-Admin</sub>
+<sub>Echte browserseitige Linux-VM · Terminal · Visitor-Admin</sub>
 
 </div>
 
