@@ -4,9 +4,38 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Linux Terminal</title>
-<style>html,body{margin:0;height:100%;background:#050505}iframe{display:block;width:100%;height:100%;border:0}</style>
+<style>
+:root{color-scheme:dark;--bg:#050505;--panel:#0b0b0b;--text:#eee;--muted:#777;--green:#8be28b;--orange:#ff6a00}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:var(--bg);color:var(--text);font-family:Consolas,"Liberation Mono",monospace}
+body{overflow:hidden}#terminal{height:100%;display:flex;flex-direction:column;padding:12px}#bar{height:28px;color:var(--muted);font-size:12px}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--green);margin-right:7px;box-shadow:0 0 8px var(--green)}
+#screen{flex:1;overflow:auto;border:1px solid #222;border-radius:10px;background:var(--panel);padding:16px}
+.line{white-space:pre-wrap;line-height:1.5}.output{color:#ddd}.prompt{color:var(--green)}.error{color:#ff7777}.accent{color:var(--orange)}
+#inputrow{display:flex;gap:8px;margin-top:10px}#prompt{color:var(--green)}#input{flex:1;background:transparent;border:0;outline:0;color:#fff;font:inherit;font-size:16px}
+</style>
 </head>
 <body>
-<iframe src="https://linuxontab.com/2.0/" title="LinuxOnTab 2.0"></iframe>
+<div id="terminal"><div id="bar"><span class="dot"></span>RADON / LINUX MINT CONSOLE • <span id="status">ready</span></div><div id="screen"></div><div id="inputrow"><span id="prompt">adam@lordlolqdh:~$</span><input id="input" autocomplete="off" autocapitalize="off" spellcheck="false" autofocus></div></div>
+<script>
+(()=> {
+const s=document.getElementById("screen"),i=document.getElementById("input"),st=document.getElementById("status"),p=document.getElementById("prompt"),hist=[];let hi=0;
+const files={"/home/adam/README.txt":"Lightweight browser Linux console. Functional terminal simulation.","/home/adam/projects":"LordLOLQDH projects\nRadon OS\nKDS\nWeb projects"};
+function out(t="",c="output"){const e=document.createElement("div");e.className="line "+c;e.textContent=t;s.appendChild(e);s.scrollTop=s.scrollHeight}
+function clear(){s.innerHTML=""} function promptLine(c){out(p.textContent+" "+c,"prompt")}
+function now(){return new Date().toLocaleString("de-DE",{dateStyle:"medium",timeStyle:"medium"})}
+async function visitors(){st.textContent="updating…";try{const r=await fetch("https://eopvkwhcgznvubesaszv.supabase.co/functions/v1/profile-visitor-counter?source=console&ts="+Date.now(),{cache:"no-store"});if(!r.ok)throw Error("HTTP "+r.status);const x=await r.text();const m=[...x.matchAll(/>\s*([0-9][0-9,]*)\s*<\/text>/g)].map(a=>a[1].replace(/,/g,""));const n=m.find(a=>+a>0);out(n?"Visitors: "+(+n).toLocaleString("de-DE"):"Visitor endpoint responded, count not found","accent");st.textContent="counter online"}catch(e){out("Visitor counter unavailable: "+e.message,"error");st.textContent="counter offline"}}
+const c={
+help(){out("Commands:");out("  help        Show this help");out("  clear       Clear the terminal");out("  echo TEXT   Print text");out("  date        Show current date and time");out("  whoami      Show current user");out("  pwd         Show current directory");out("  ls          List files");out("  cat FILE    Read a virtual file");out("  uname       Show system information");out("  neofetch    Show system summary");out("  visitors    Update and show the visitor counter");out("  history     Show command history");out("  about       About this console");out("  exit        Leave the console")},
+clear,echo(a){out(a.join(" "))},date(){out(now())},whoami(){out("adam")},pwd(){out("/home/adam")},ls(){out("README.txt  projects/")},
+cat(a){if(!a[0])return out("cat: missing file operand","error");const k=a[0].startsWith("/")?a[0]:"/home/adam/"+a[0];files[k]?out(files[k]):out("cat: "+a[0]+": No such file","error")},
+uname(a){out(a[0]==="-a"?"Linux lordlolqdh 6.x-browser x86_64 GNU/Linux":"Linux")},
+neofetch(){out("OS: Linux Mint / Browser Console\nHost: LordLOLQDH\nShell: radon-shell 1.0\nUser: adam\nMode: lightweight\nCounter: Supabase\nStatus: functional")},
+visitors,history(){hist.forEach((x,n)=>out(String(n+1).padStart(3)+"  "+x))},about(){out("Functional lightweight Linux-style terminal.");out("Runs entirely in the browser without an external terminal iframe.")},exit(){out("Close this tab or use the browser Back button to leave.")}
+};
+async function run(v){v=v.trim();if(!v)return;hist.push(v);hi=hist.length;promptLine(v);let a=v.match(/"[^"]*"|'[^']*'|\S+/g)||[],n=(a.shift()||"").toLowerCase();a=a.map(x=>x.replace(/^["']|["']$/g,""));if(n==="sudo")return out("sudo: privileged system access is unavailable in a browser.","error");if(c[n])try{await c[n](a)}catch(e){out("Command error: "+e.message,"error")}else out(n+": command not found. Type 'help'.","error")}
+i.onkeydown=async e=>{if(e.key==="Enter"){const v=i.value;i.value="";await run(v)}else if(e.key==="ArrowUp"){e.preventDefault();if(hi>0)hi--;i.value=hist[hi]||""}else if(e.key==="ArrowDown"){e.preventDefault();if(hi<hist.length)hi++;i.value=hist[hi]||""}else if(e.key==="Tab"){e.preventDefault();const v=i.value.toLowerCase(),a=Object.keys(c).filter(x=>x.startsWith(v));if(a.length===1)i.value=a[0]+" "}else if(e.ctrlKey&&e.key.toLowerCase()==="l"){e.preventDefault();clear()}};
+s.onclick=()=>i.focus();out("Linux Mint lightweight console");out("Type 'help' for commands.");out("Visitor counter connected to the existing Supabase endpoint.");visitors();i.focus();
+})();
+</script>
 </body>
 </html>
