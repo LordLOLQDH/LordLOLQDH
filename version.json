@@ -1,10 +1,12 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "name": "Radon Linux Mint Console",
   "release": "2026-10-08",
   "notes": [
-    "Counter admin backend fixed",
-    "Visible version display",
-    "Manual refresh button"
+    "Rebuilt virtual filesystem with fresh default data",
+    "Added persistent virtual files and directories",
+    "Added browser file uploads",
+    "Added real Python 3 runtime via Pyodide",
+    "Added resetfs command"
   ]
 }
