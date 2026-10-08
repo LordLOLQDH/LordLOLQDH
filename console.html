@@ -7,8 +7,8 @@
 <style>
 :root{color-scheme:dark;--bg:#050505;--panel:#0b0b0b;--text:#eee;--muted:#777;--green:#8be28b;--orange:#ff6a00}
 *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:var(--bg);color:var(--text);font-family:Consolas,"Liberation Mono",monospace}
-body{overflow:hidden}#terminal{height:100%;display:flex;flex-direction:column;padding:12px}#bar{height:28px;color:var(--muted);font-size:12px}
-.dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--green);margin-right:7px;box-shadow:0 0 8px var(--green)}
+body{overflow:hidden}#terminal{height:100%;display:flex;flex-direction:column;padding:12px}#bar{height:34px;color:var(--muted);font-size:12px;display:flex;align-items:center;gap:4px}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--green);margin-right:3px;box-shadow:0 0 8px var(--green)}#refreshBtn{margin-left:auto;padding:5px 10px;border:1px solid #333;border-radius:7px;background:#121212;color:#ddd;font:inherit;font-size:11px;cursor:pointer}
 #screen{flex:1;overflow:auto;border:1px solid #222;border-radius:10px;background:var(--panel);padding:16px}
 .line{white-space:pre-wrap;line-height:1.5}.output{color:#ddd}.prompt{color:var(--green)}.error{color:#ff7777}.accent{color:var(--orange)}
 #inputrow{display:flex;gap:8px;margin-top:10px}#prompt{color:var(--green)}#input{flex:1;background:transparent;border:0;outline:0;color:#fff;font:inherit;font-size:16px}
@@ -22,12 +22,12 @@ body{overflow:hidden}#terminal{height:100%;display:flex;flex-direction:column;pa
 </style>
 </head>
 <body>
-<div id="terminal"><div id="bar"><span class="dot"></span>RADON / LINUX MINT CONSOLE • <span id="status">ready</span></div><div id="screen"></div><div id="inputrow"><span id="prompt">adam@lordlolqdh:~$</span><input id="input" autocomplete="off" autocapitalize="off" spellcheck="false" autofocus></div></div>
+<div id="terminal"><div id="bar"><span class="dot"></span>RADON / LINUX MINT CONSOLE • <span id="status">ready</span><span id="version"> • v1.1.0</span><button id="refreshBtn" type="button">Aktualisieren</button></div><div id="screen"></div><div id="inputrow"><span id="prompt">adam@lordlolqdh:~$</span><input id="input" autocomplete="off" autocapitalize="off" spellcheck="false" autofocus></div></div>
 <div id="secretModal"><div id="secretBox"><h3>Counter Admin</h3><p id="secretText">Passwort eingeben:</p><input id="secretInput" type="password" autocomplete="off"><div id="secretButtons"><button id="secretCancel">Abbrechen</button><button id="secretOk">Bestätigen</button></div></div></div>
 <script>
 (()=> {
 const s=document.getElementById("screen"),i=document.getElementById("input"),st=document.getElementById("status"),p=document.getElementById("prompt"),hist=[];let hi=0;
-const modal=document.getElementById("secretModal"),secretInput=document.getElementById("secretInput"),secretText=document.getElementById("secretText");
+const modal=document.getElementById("secretModal"),secretInput=document.getElementById("secretInput"),secretText=document.getElementById("secretText"),refreshBtn=document.getElementById("refreshBtn"),versionEl=document.getElementById("version");
 const files={"/home/adam/README.txt":"Lightweight browser Linux console. Functional terminal simulation.","/home/adam/projects":"LordLOLQDH projects\nRadon OS\nKDS\nWeb projects"};
 function out(t="",c="output"){const e=document.createElement("div");e.className="line "+c;e.textContent=t;s.appendChild(e);s.scrollTop=s.scrollHeight}
 function clear(){s.innerHTML=""} function promptLine(c){out(p.textContent+" "+c,"prompt")}
@@ -45,7 +45,7 @@ visitors,history(){hist.forEach((x,n)=>out(String(n+1).padStart(3)+"  "+x))},abo
 };
 async function run(v){v=v.trim();if(!v)return;hist.push(v);hi=hist.length;promptLine(v);let a=v.match(/"[^"]*"|'[^']*'|\S+/g)||[],n=(a.shift()||"").toLowerCase();a=a.map(x=>x.replace(/^["']|["']$/g,""));if(n==="counter"&&a[0]?.toLowerCase()==="set")return setCounter();if(n==="sudo")return out("sudo: privileged system access is unavailable in a browser.","error");if(c[n])try{await c[n](a)}catch(e){out("Command error: "+e.message,"error")}else out(n+": command not found. Type 'help'.","error")}
 i.onkeydown=async e=>{if(e.key==="Enter"){const v=i.value;i.value="";await run(v)}else if(e.key==="ArrowUp"){e.preventDefault();if(hi>0)hi--;i.value=hist[hi]||""}else if(e.key==="ArrowDown"){e.preventDefault();if(hi<hist.length)hi++;i.value=hist[hi]||""}else if(e.key==="Tab"){e.preventDefault();const v=i.value.toLowerCase(),a=Object.keys(c).filter(x=>x.startsWith(v));if(a.length===1)i.value=a[0]+" "}else if(e.ctrlKey&&e.key.toLowerCase()==="l"){e.preventDefault();clear()}};
-s.onclick=()=>i.focus();out("Linux Mint lightweight console");out("Type 'help' for commands.");out("Visitor counter connected to the existing Supabase endpoint.");visitors();i.focus();
+refreshBtn.onclick=()=>window.location.reload();async function loadVersion(){try{const r=await fetch("version.json?ts="+Date.now(),{cache:"no-store"});if(r.ok){const v=await r.json();if(v.version)versionEl.textContent=" • v"+v.version}}catch(e){}}s.onclick=()=>i.focus();loadVersion();out("Linux Mint lightweight console");out("Type 'help' for commands.");out("Visitor counter connected to the existing Supabase endpoint.");visitors();i.focus();
 })();
 </script>
 </body>
