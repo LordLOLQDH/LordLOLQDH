@@ -1,0 +1,10 @@
+{
+  "version": "1.1.0",
+  "name": "Radon Linux Mint Console",
+  "release": "2026-10-08",
+  "notes": [
+    "Counter admin backend fixed",
+    "Visible version display",
+    "Manual refresh button"
+  ]
+}
