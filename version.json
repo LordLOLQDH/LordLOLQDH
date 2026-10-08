@@ -1,12 +1,10 @@
 {
-  "version": "1.2.0",
+  "version": "1.2.1",
   "name": "Radon Linux Mint Console",
   "release": "2026-10-08",
   "notes": [
-    "Rebuilt virtual filesystem with fresh default data",
-    "Added persistent virtual files and directories",
-    "Added browser file uploads",
-    "Added real Python 3 runtime via Pyodide",
-    "Added resetfs command"
+    "Removed Python runtime and Python commands",
+    "Removed Pyodide dependency",
+    "Kept persistent virtual filesystem and browser file uploads"
   ]
 }
