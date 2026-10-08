@@ -3,12 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Linux Terminal</title>
+<title>Radon Linux Mint Console</title>
 <style>
 :root{color-scheme:dark;--bg:#050505;--panel:#0b0b0b;--text:#eee;--muted:#777;--green:#8be28b;--orange:#ff6a00}
 *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:var(--bg);color:var(--text);font-family:Consolas,"Liberation Mono",monospace}
 body{overflow:hidden}#terminal{height:100%;display:flex;flex-direction:column;padding:12px}#bar{height:34px;color:var(--muted);font-size:12px;display:flex;align-items:center;gap:4px}
-.dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--green);margin-right:3px;box-shadow:0 0 8px var(--green)}#refreshBtn{margin-left:auto;padding:5px 10px;border:1px solid #333;border-radius:7px;background:#121212;color:#ddd;font:inherit;font-size:11px;cursor:pointer}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--green);margin-right:3px;box-shadow:0 0 8px var(--green)}
+#refreshBtn,#uploadBtn{padding:5px 10px;border:1px solid #333;border-radius:7px;background:#121212;color:#ddd;font:inherit;font-size:11px;cursor:pointer}
+#uploadBtn{margin-left:auto}#refreshBtn{margin-left:4px}
 #screen{flex:1;overflow:auto;border:1px solid #222;border-radius:10px;background:var(--panel);padding:16px}
 .line{white-space:pre-wrap;line-height:1.5}.output{color:#ddd}.prompt{color:var(--green)}.error{color:#ff7777}.accent{color:var(--orange)}
 #inputrow{display:flex;gap:8px;margin-top:10px}#prompt{color:var(--green)}#input{flex:1;background:transparent;border:0;outline:0;color:#fff;font:inherit;font-size:16px}
@@ -19,33 +21,57 @@ body{overflow:hidden}#terminal{height:100%;display:flex;flex-direction:column;pa
 #secretButtons{display:flex;justify-content:flex-end;gap:8px;margin-top:12px}
 #secretButtons button{padding:9px 14px;border:1px solid #444;border-radius:8px;background:#181818;color:#fff;font:inherit;cursor:pointer}
 #secretButtons button:last-child{border-color:var(--orange)}
+#fileInput{display:none}
 </style>
 </head>
 <body>
-<div id="terminal"><div id="bar"><span class="dot"></span>RADON / LINUX MINT CONSOLE • <span id="status">ready</span><span id="version"> • v1.1.0</span><button id="refreshBtn" type="button">Aktualisieren</button></div><div id="screen"></div><div id="inputrow"><span id="prompt">adam@lordlolqdh:~$</span><input id="input" autocomplete="off" autocapitalize="off" spellcheck="false" autofocus></div></div>
+<div id="terminal"><div id="bar"><span class="dot"></span>RADON / LINUX MINT CONSOLE • <span id="status">ready</span><span id="version"> • v1.2.0</span><button id="uploadBtn" type="button">Datei hochladen</button><button id="refreshBtn" type="button">Aktualisieren</button><input id="fileInput" type="file" multiple></div><div id="screen"></div><div id="inputrow"><span id="prompt">adam@lordlolqdh:~$</span><input id="input" autocomplete="off" autocapitalize="off" spellcheck="false" autofocus></div></div>
 <div id="secretModal"><div id="secretBox"><h3>Counter Admin</h3><p id="secretText">Passwort eingeben:</p><input id="secretInput" type="password" autocomplete="off"><div id="secretButtons"><button id="secretCancel">Abbrechen</button><button id="secretOk">Bestätigen</button></div></div></div>
 <script>
 (()=> {
 const s=document.getElementById("screen"),i=document.getElementById("input"),st=document.getElementById("status"),p=document.getElementById("prompt"),hist=[];let hi=0;
-const modal=document.getElementById("secretModal"),secretInput=document.getElementById("secretInput"),secretText=document.getElementById("secretText"),refreshBtn=document.getElementById("refreshBtn"),versionEl=document.getElementById("version");
-const files={"/home/adam/README.txt":"Lightweight browser Linux console. Functional terminal simulation.","/home/adam/projects":"LordLOLQDH projects\nRadon OS\nKDS\nWeb projects"};
+const modal=document.getElementById("secretModal"),secretInput=document.getElementById("secretInput"),secretText=document.getElementById("secretText"),refreshBtn=document.getElementById("refreshBtn"),uploadBtn=document.getElementById("uploadBtn"),fileInput=document.getElementById("fileInput"),versionEl=document.getElementById("version");
+const FS_KEY="radon-console-fs-v2",CWD_KEY="radon-console-cwd-v2";
+const initialFiles={
+"/home/adam/README.txt":"Welcome to the new Radon Linux Mint virtual environment.\nThis filesystem is stored locally in your browser.",
+"/home/adam/hello.py":"print('Hello from Python on Radon OS!')\nprint(2 + 3)",
+"/home/adam/projects/README.txt":"Projects directory ready.",
+"/home/adam/projects/radon.txt":"Radon OS workspace."
+};
+let cwd=localStorage.getItem(CWD_KEY)||"/home/adam";
+let files=loadFs();
+function loadFs(){try{const x=JSON.parse(localStorage.getItem(FS_KEY)||"null");if(x&&typeof x==="object")return x}catch(e){}localStorage.setItem(FS_KEY,JSON.stringify(initialFiles));return {...initialFiles}}
+function saveFs(){localStorage.setItem(FS_KEY,JSON.stringify(files));localStorage.setItem(CWD_KEY,cwd)}
+function normalize(path){if(!path)return cwd;let base=path.startsWith("/")?path:cwd+"/"+path;let parts=[];for(const part of base.split("/")){if(!part||part===".")continue;if(part==="..")parts.pop();else parts.push(part)}return "/"+parts.join("/")}
+function isDir(path){path=normalize(path);return path==="/"||Object.keys(files).some(k=>k.startsWith(path.endsWith("/")?path:path+"/"))}
+function list(path=cwd){path=normalize(path);const pre=path==="/"?"":path+"/",names=new Map();Object.keys(files).forEach(k=>{if(!k.startsWith(pre))return;const rest=k.slice(pre.length).split("/");if(rest[0])names.set(rest[0],rest.length>1)});return [...names.entries()].sort().map(([n,d])=>d?n+"/":n)}
 function out(t="",c="output"){const e=document.createElement("div");e.className="line "+c;e.textContent=t;s.appendChild(e);s.scrollTop=s.scrollHeight}
 function clear(){s.innerHTML=""} function promptLine(c){out(p.textContent+" "+c,"prompt")}
 function now(){return new Date().toLocaleString("de-DE",{dateStyle:"medium",timeStyle:"medium"})}
 function askSecret(){return new Promise(resolve=>{modal.style.display="flex";secretInput.value="";secretText.textContent="Passwort eingeben:";setTimeout(()=>secretInput.focus(),0);const finish=v=>{modal.style.display="none";resolve(v)};const ok=()=>finish(secretInput.value);const cancel=()=>finish(null);document.getElementById("secretOk").onclick=ok;document.getElementById("secretCancel").onclick=cancel;secretInput.onkeydown=e=>{if(e.key==="Enter")ok();if(e.key==="Escape")cancel()}})}
 async function setCounter(){const password=await askSecret();if(password===null)return out("Abgebrochen.","error");const raw=window.prompt("Neue Counter-Zahl eingeben:");if(raw===null)return out("Abgebrochen.","error");const count=Number(raw.trim());if(!Number.isInteger(count)||count<0||count>1000000000)return out("Ungültige Zahl.","error");st.textContent="updating…";try{const r=await fetch("https://eopvkwhcgznvubesaszv.supabase.co/functions/v1/profile-visitor-admin",{method:"POST",headers:{"Content-Type":"text/plain;charset=UTF-8"},body:JSON.stringify({password,count})});const data=await r.json().catch(()=>({}));if(!r.ok)throw Error(data.error||"HTTP "+r.status);out("Visitor counter set to: "+Number(data.visitor_count).toLocaleString("de-DE"),"accent");st.textContent="counter admin online"}catch(e){out("Counter update failed: "+e.message,"error");st.textContent="counter admin error"}}
 async function visitors(){st.textContent="updating…";try{const r=await fetch("https://eopvkwhcgznvubesaszv.supabase.co/functions/v1/profile-visitor-counter?source=console&ts="+Date.now(),{cache:"no-store"});if(!r.ok)throw Error("HTTP "+r.status);const x=await r.text();const m=[...x.matchAll(/>\s*([0-9][0-9,]*)\s*<\/text>/g)].map(a=>a[1].replace(/,/g,""));const n=m.find(a=>+a>0);out(n?"Visitors: "+(+n).toLocaleString("de-DE"):"Visitor endpoint responded, count not found","accent");st.textContent="counter online"}catch(e){out("Visitor counter unavailable: "+e.message,"error");st.textContent="counter offline"}}
+function fileArg(a){return normalize((a[0]||"").replace(/^~(?=\/|$)/,"/home/adam"))}
+async function uploadFiles(list){for(const file of [...list]){if(file.size>2*1024*1024){out("upload: "+file.name+": Datei zu groß (max. 2 MB).","error");continue}const text=await file.text();let path=normalize(file.name);let n=1;const original=path;while(files[path]!==undefined){const dot=original.lastIndexOf(".");path=dot>0?original.slice(0,dot)+"_"+n+original.slice(dot):original+"_"+n;n++}files[path]=text}saveFs();out("Upload abgeschlossen: "+list.length+" Datei(en) in "+cwd,"accent");out(list.length?"ls zeigt die neuen Dateien.":"");}
+async function loadPyodide(){if(window.pyodide)return window.pyodide;st.textContent="loading Python…";out("Python runtime wird geladen…","accent");const script=document.createElement("script");script.src="https://cdn.jsdelivr.net/pyodide/v0.28.2/full/pyodide.js";document.head.appendChild(script);await new Promise((res,rej)=>{script.onload=res;script.onerror=()=>rej(Error("Pyodide konnte nicht geladen werden"))});window.pyodide=await loadPyodide();st.textContent="python online";return window.pyodide}
+async function python(a){if(!a.length)return out("Python 3.12 browser runtime. Nutze: python FILE oder python -c \"print(2+2)\"");const py=await loadPyodide();let code="";if(a[0]==="-c")code=a.slice(1).join(" ");else{const path=fileArg(a);if(files[path]===undefined)return out("python: "+a[0]+": No such file","error");code=files[path]}try{const result=await py.runPythonAsync(code);if(result!==undefined&&result!==null&&String(result)!=="")out(String(result));}catch(e){out("Python: "+String(e.message||e),"error")}st.textContent="python online"}
 const c={
-help(){out("Commands:");out("  help          Show this help");out("  clear         Clear the terminal");out("  echo TEXT     Print text");out("  date          Show current date and time");out("  whoami        Show current user");out("  pwd           Show current directory");out("  ls            List files");out("  cat FILE      Read a virtual file");out("  uname         Show system information");out("  neofetch      Show system summary");out("  visitors      Update and show the visitor counter");out("  counter set   Set the visitor counter (admin password required)");out("  history       Show command history");out("  about         About this console");out("  exit          Leave the console")},
-clear,echo(a){out(a.join(" "))},date(){out(now())},whoami(){out("adam")},pwd(){out("/home/adam")},ls(){out("README.txt  projects/")},
-cat(a){if(!a[0])return out("cat: missing file operand","error");const k=a[0].startsWith("/")?a[0]:"/home/adam/"+a[0];files[k]?out(files[k]):out("cat: "+a[0]+": No such file","error")},
-uname(a){out(a[0]==="-a"?"Linux lordlolqdh 6.x-browser x86_64 GNU/Linux":"Linux")},
-neofetch(){out("OS: Linux Mint / Browser Console\nHost: LordLOLQDH\nShell: radon-shell 1.0\nUser: adam\nMode: lightweight\nCounter: Supabase\nStatus: functional")},
-visitors,history(){hist.forEach((x,n)=>out(String(n+1).padStart(3)+"  "+x))},about(){out("Functional lightweight Linux-style terminal.");out("Runs entirely in the browser without an external terminal iframe.")},exit(){out("Close this tab or use the browser Back button to leave.")}
+help(){out("Commands:");out("  help                 Show this help");out("  clear                Clear terminal");out("  echo TEXT            Print text");out("  date                 Show current date and time");out("  whoami               Show current user");out("  pwd                  Show current directory");out("  ls [DIR]             List files");out("  cd [DIR]             Change directory");out("  cat FILE             Read a file");out("  touch FILE            Create an empty file");out("  mkdir DIR             Create a directory");out("  rm FILE               Delete a file");out("  resetfs               Delete virtual data and create fresh files");out("  upload                Upload files into current directory");out("  python FILE           Run a Python file");out("  python -c CODE       Run Python code");out("  uname [-a]            Show system information");out("  neofetch              Show system summary");out("  visitors              Update and show visitor counter");out("  counter set           Set visitor counter (admin)");out("  history               Show command history");out("  about                 About this console");out("  exit                  Leave the console")},clear,echo(a){out(a.join(" "))},date(){out(now())},whoami(){out("adam")},pwd(){out(cwd)},ls(a){out(list(a[0]||cwd).join("  ")||"(empty)")},
+cd(a){const path=normalize(a[0]||"/home/adam");if(!isDir(path))return out("cd: "+(a[0]||"")+" : No such directory","error");cwd=path;saveFs();p.textContent="adam@lordlolqdh:"+((cwd==="/home/adam")?"~":cwd)+"$"},
+cat(a){if(!a[0])return out("cat: missing file operand","error");const k=fileArg(a);files[k]!==undefined?out(files[k]):out("cat: "+a[0]+": No such file","error")},
+touch(a){if(!a[0])return out("touch: missing file operand","error");const k=fileArg(a);if(files[k]===undefined)files[k]="";saveFs();out("Created "+k,"accent")},
+mkdir(a){if(!a[0])return out("mkdir: missing operand","error");const k=fileArg(a).replace(/\/$/,"");if(isDir(k))return out("mkdir: cannot create directory: File exists","error");files[k+"/.directory"]="" ;saveFs();out("Created directory "+k,"accent")},
+rm(a){if(!a[0])return out("rm: missing operand","error");const k=fileArg(a);let removed=false;Object.keys(files).forEach(f=>{if(f===k||f.startsWith(k+"/")){delete files[f];removed=true}});saveFs();removed?out("Removed "+k,"accent"):out("rm: "+a[0]+": No such file","error")},
+resetfs(){files={...initialFiles};cwd="/home/adam";saveFs();p.textContent="adam@lordlolqdh:~$";out("Virtual filesystem reset. Fresh Radon data created.","accent");out("Files: README.txt  hello.py  projects/")},
+upload(){fileInput.click()},python,
+uname(a){out(a[0]==="-a"?"Linux lordlolqdh 6.x-browser x86_64 GNU/Linux":"Linux")},neofetch(){out("OS: Linux Mint / Browser Console\nHost: LordLOLQDH\nShell: radon-shell 1.2\nUser: adam\nMode: lightweight\nPython: Pyodide\nFilesystem: persistent browser storage\nCounter: Supabase\nStatus: functional")},
+visitors,history(){hist.forEach((x,n)=>out(String(n+1).padStart(3)+"  "+x))},about(){out("Functional lightweight Linux-style terminal.");out("Virtual files persist locally in this browser.");out("Python runs in-browser with Pyodide.");out("Uploaded files become virtual files in the current directory.")},exit(){out("Close this tab or use the browser Back button to leave.")}
 };
 async function run(v){v=v.trim();if(!v)return;hist.push(v);hi=hist.length;promptLine(v);let a=v.match(/"[^"]*"|'[^']*'|\S+/g)||[],n=(a.shift()||"").toLowerCase();a=a.map(x=>x.replace(/^["']|["']$/g,""));if(n==="counter"&&a[0]?.toLowerCase()==="set")return setCounter();if(n==="sudo")return out("sudo: privileged system access is unavailable in a browser.","error");if(c[n])try{await c[n](a)}catch(e){out("Command error: "+e.message,"error")}else out(n+": command not found. Type 'help'.","error")}
 i.onkeydown=async e=>{if(e.key==="Enter"){const v=i.value;i.value="";await run(v)}else if(e.key==="ArrowUp"){e.preventDefault();if(hi>0)hi--;i.value=hist[hi]||""}else if(e.key==="ArrowDown"){e.preventDefault();if(hi<hist.length)hi++;i.value=hist[hi]||""}else if(e.key==="Tab"){e.preventDefault();const v=i.value.toLowerCase(),a=Object.keys(c).filter(x=>x.startsWith(v));if(a.length===1)i.value=a[0]+" "}else if(e.ctrlKey&&e.key.toLowerCase()==="l"){e.preventDefault();clear()}};
-refreshBtn.onclick=()=>window.location.reload();async function loadVersion(){try{const r=await fetch("version.json?ts="+Date.now(),{cache:"no-store"});if(r.ok){const v=await r.json();if(v.version)versionEl.textContent=" • v"+v.version}}catch(e){}}s.onclick=()=>i.focus();loadVersion();out("Linux Mint lightweight console");out("Type 'help' for commands.");out("Visitor counter connected to the existing Supabase endpoint.");visitors();i.focus();
+refreshBtn.onclick=()=>window.location.reload();uploadBtn.onclick=()=>fileInput.click();fileInput.onchange=async()=>{if(fileInput.files.length)await uploadFiles(fileInput.files);fileInput.value=""};
+async function loadVersion(){try{const r=await fetch("version.json?ts="+Date.now(),{cache:"no-store"});if(r.ok){const v=await r.json();if(v.version)versionEl.textContent=" • v"+v.version}}catch(e){}}
+s.onclick=()=>i.focus();loadVersion();out("Linux Mint lightweight console v1.2.0");out("New virtual filesystem loaded. Type 'help' for commands.");out("Python is available with 'python hello.py' or 'python -c \"print(2+2)\"'.");visitors();i.focus();
 })();
 </script>
 </body>
